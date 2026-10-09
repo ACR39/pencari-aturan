@@ -1,0 +1,703 @@
+MENTERI PERHUBUNGAN
+REPUBLIK INDONESIA
+
+PERATURAN MENTERI PERHUBUNGAN REPUBLIK INDONESIA
+NOMOR PM 17 TAHUN 2021
+TENTANG
+PENYELENGGARAAN ANALISIS DAMPAK LALU LINTAS
+
+DENGAN RAHMAT TUHAN YANG MAHA ESA
+
+MENTERI PERHUBUNGAN REPUBLIK INDONESIA,
+
+Menimbang : bahwa untuk melaksanakan ketentuan Pasal 3 ayat (5), Pasal 5 ayat (5), dan Pasal 8 ayat (5) Peraturan Pemerintah Nomor 30 Tahun 2021 tentang Penyelenggaraan Bidang Lalu Lintas dan Angkutan Jalan, perlu menetapkan Peraturan Menteri Perhubungan tentang Penyelenggaraan Analisis Dampak Lalu Lintas;
+
+Mengingat : 1. Pasal 17 ayat (3) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945;
+2. Undang-Undang Nomor 39 Tahun 2008 tentang Kementerian Negara (Lembaran Negara Republik Indonesia Tahun 2008 Nomor 166, Tambahan Lembaran Negara Republik Indonesia Nomor 4916);
+3. Undang-Undang Nomor 22 Tahun 2009 tentang Lalu Lintas dan Angkutan Jalan (Lembaran Negara Republik Indonesia Tahun 2009 Nomor 96, Tambahan Lembaran Negara Republik Indonesia Nomor 5025);
+4. Undang-Undang Nomor 11 Tahun 2020 tentang Cipta Kerja (Lembaran Negara Republik Indonesia Tahun 2020 Nomor 245, Tambahan Lembaran Negara Republik Indonesia Nomor 6573);
+5. Peraturan Pemerintah Nomor 5 Tahun 2021 tentang Penyelenggaraan Perizinan Berusaha Berbasis Risiko (Lembaran Negara Republik Indonesia Tahun 2021 Nomor 15, Tambahan Lembaran Negara Republik Indonesia Nomor 6617);
+6. Peraturan Pemerintah Nomor 30 Tahun 2021 tentang Penyelenggaraan Bidang Lalu Lintas dan Angkutan Jalan (Lembaran Negara Republik Indonesia Tahun 2021 Nomor 40, Tambahan Lembaran Negara Republik Indonesia Nomor 6642);
+7. Peraturan Presiden Nomor 40 Tahun 2015 tentang Kementerian Perhubungan (Lembaran Negara Republik Indonesia Tahun 2015 Nomor 75);
+8. Peraturan Presiden Nomor 103 Tahun 2015 tentang Badan Pengelola Transportasi Jakarta, Bogor, Depok, Tangerang, dan Bekasi (Lembaran Negara Republik Indonesia Tahun 2015 Nomor 216);
+9. Peraturan Menteri Perhubungan Nomor PM 110 Tahun 2018 tentang Organisasi dan Tata Kerja Badan Pengelola Transportasi Jakarta, Bogor, Depok, Tangerang, dan Bekasi (Berita Negara Republik Indonesia Tahun 2018 Nomor 1555);
+10. Peraturan Menteri Perhubungan Nomor PM 122 Tahun 2018 tentang Organisasi dan Tata Kerja Kementerian Perhubungan (Berita Negara Republik Indonesia Tahun 2018 Nomor 1756);
+
+MEMUTUSKAN:
+Menetapkan : PERATURAN MENTERI PERHUBUNGAN TENTANG PENYELENGGARAAN ANALISIS DAMPAK LALU LINTAS.
+
+BAB I
+KETENTUAN UMUM
+
+Pasal 1
+Dalam Peraturan Menteri ini yang dimaksud dengan:
+1. Analisis Dampak Lalu Lintas adalah serangkaian kegiatan kajian mengenai dampak lalu lintas dari pembangunan pusat kegiatan, permukiman, dan infrastruktur yang hasilnya dituangkan dalam bentuk dokumen hasil analisis dampak lalu lintas.
+2. Bangkitan Lalu Lintas adalah jumlah kendaraan masuk atau keluar rata-rata per hari atau selama jam puncak, yang dibangkitkan dan/atau ditarik oleh adanya rencana pembangunan pusat kegiatan, permukiman, dan infrastruktur.
+3. Pengembang atau Pembangun adalah orang, badan hukum, kelompok orang, atau perkumpulan yang menurut hukum sah sebagai pemilik yang akan membangun atau mengembangkan pusat kegiatan, permukiman, dan infrastruktur.
+4. Tim Evaluasi Penilai adalah tim yang menilai serta mengevaluasi dokumen hasil Analisis Dampak Lalu Lintas yang disampaikan oleh Pengembang atau Pembangun.
+5. Tim Monitoring dan Evaluasi adalah tim yang bertugas mengawasi dan mengevaluasi implementasi pelaksanaan hasil Analisis Dampak Lalu Lintas yang disampaikan oleh Pengembang atau Pembangun.
+6. Tenaga Ahli Penyusun adalah orang yang memiliki keahlian secara profesional dan dapat memberikan saran dan pendapat sesuai dengan lingkup keahlian yang dimiliki dalam penyusunan Analisis Dampak Lalu Lintas.
+7. Sertifikat Kompetensi Penyusun Analisis Dampak Lalu Lintas adalah sertifikat yang diberikan kepada Tenaga Ahli Penyusun yang telah memenuhi persyaratan, pengetahuan, keahlian, dan kualifikasi di bidang penyusunan Analisis Dampak Lalu Lintas sesuai dengan kompetensi yang ditetapkan.
+8. Sertifikat Kompetensi Penilai Analisis Dampak Lalu Lintas adalah sertifikat yang diberikan kepada petugas yang telah memenuhi persyaratan, pengetahuan, keahlian, dan kualifikasi di bidang penilaian Analisis Dampak Lalu Lintas sesuai dengan kompetensi yang ditetapkan.
+9. Pemerintah Pusat adalah Presiden Republik Indonesia yang memegang kekuasaan pemerintahan negara Republik Indonesia yang dibantu oleh Wakil Presiden dan menteri sebagaimana dimaksud dalam Undang-Undang Dasar Negara Republik Indonesia Tahun 1945.
+10. Pemerintah Daerah adalah kepala daerah sebagai unsur penyelenggara pemerintahan daerah yang memimpin pelaksanaan urusan pemerintahan yang menjadi kewenangan daerah otonom.
+11. Menteri adalah menteri yang menyelenggarakan urusan pemerintahan di bidang sarana dan prasarana lalu lintas dan angkutan jalan.
+12. Direktur Jenderal adalah pimpinan tinggi madya yang bertanggung jawab di bidang sarana dan prasarana lalu lintas dan angkutan jalan.
+13. Kepala Badan adalah Kepala Badan Pengelola Transportasi Jakarta, Bogor, Depok, Tangerang, dan Bekasi.
+
+BAB II
+ANALISIS DAMPAK LALU LINTAS
+
+Bagian Kesatu
+Jenis Pusat Kegiatan, Permukiman, dan Infrastruktur
+
+Pasal 2
+(1) Setiap rencana pembangunan yang meliputi:
+a. pusat kegiatan;
+b. permukiman; dan
+c. infrastruktur,
+yang akan menimbulkan gangguan keamanan, keselamatan, ketertiban, dan kelancaran lalu lintas dan angkutan jalan wajib dilakukan Analisis Dampak Lalu Lintas.
+(2) Rencana pembangunan pusat kegiatan, permukiman, dan infrastruktur sebagaimana dimaksud pada ayat (1) dapat berupa pembangunan baru atau pengembangan.
+(3) Dokumen Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) terintegrasi dengan dokumen analisis mengenai dampak lingkungan hidup atau upaya pengelolaan lingkungan hidup dan upaya pemantauan lingkungan hidup.
+
+Pasal 3
+(1) Pusat kegiatan sebagaimana dimaksud dalam Pasal 2 ayat (1) huruf a berupa bangunan untuk:
+a. kegiatan perdagangan dan perbelanjaan;
+b. kegiatan perkantoran;
+c. kegiatan industri dan pergudangan;
+d. kegiatan pariwisata;
+e. fasilitas pendidikan;
+f. fasilitas pelayanan umum; dan/atau
+g. pusat kegiatan lain yang dapat menimbulkan bangkitan dan/atau tarikan lalu lintas.
+(2) Permukiman sebagaimana dimaksud dalam Pasal 2 ayat (1) huruf b berupa:
+a. perumahan dan permukiman;
+b. rumah susun dan apartemen; dan/atau
+c. permukiman lain yang dapat menimbulkan bangkitan dan/atau tarikan lalu lintas.
+(3) Infrastruktur sebagaimana dimaksud dalam Pasal 2 ayat (1) huruf c berupa:
+a. akses ke dan dari jalan tol;
+b. pelabuhan;
+c. bandar udara;
+d. terminal;
+e. stasiun kereta api;
+f. tempat penyimpanan kendaraan (pool);
+g. fasilitas parkir untuk umum; dan/atau
+h. infrastruktur lain yang dapat menimbulkan bangkitan dan/atau tarikan lalu lintas.
+
+Pasal 4
+(1) Pusat kegiatan, permukiman, dan infrastruktur yang wajib dilakukan Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 3, digolongkan dalam 3 (tiga) kategori skala dampak Bangkitan Lalu Lintas yang ditimbulkan sebagai berikut:
+a. kegiatan dengan Bangkitan Lalu Lintas tinggi;
+b. kegiatan dengan Bangkitan Lalu Lintas sedang; dan
+c. kegiatan dengan Bangkitan Lalu Lintas rendah.
+(2) Kategori skala dampak Bangkitan Lalu Lintas sebagaimana dimaksud pada ayat (1) dengan kriteria sebagai berikut:
+a. kegiatan dengan Bangkitan Lalu Lintas tinggi merupakan kegiatan yang membangkitkan perjalanan lebih dari 1.500 (seribu lima ratus) perjalanan per jam;
+b. kegiatan dengan Bangkitan Lalu Lintas sedang merupakan kegiatan yang membangkitkan perjalanan antara 500 (lima ratus) sampai dengan 1.500 (seribu lima ratus) perjalanan per jam; dan
+c. kegiatan dengan Bangkitan Lalu Lintas rendah merupakan kegiatan yang membangkitkan perjalanan antara 100 (seratus) sampai dengan 499 (empat ratus sembilan puluh sembilan) perjalanan per jam.
+
+Bagian Kedua
+Kriteria Ukuran Yang Wajib Analisis Dampak Lalu Lintas
+
+Pasal 5
+(1) Kategori skala dampak Bangkitan Lalu Lintas yang ditimbulkan pada rencana pembangunan pusat kegiatan sebagaimana dimaksud dalam Pasal 3 ayat (1) huruf a sampai dengan huruf d dilakukan dengan kriteria yang dihitung berdasarkan:
+a. luas lantai bangunan; atau
+b. luas lahan.
+(2) Kategori skala dampak Bangkitan Lalu Lintas yang ditimbulkan pada rencana pembangunan pusat kegiatan sebagaimana dimaksud dalam Pasal 3 ayat (1) huruf e dilakukan dengan kriteria yang dihitung berdasarkan jumlah siswa yang mampu ditampung dalam satuan waktu tertentu.
+(3) Kategori skala dampak Bangkitan Lalu Lintas yang ditimbulkan pada rencana pembangunan pusat kegiatan sebagaimana dimaksud dalam Pasal 3 ayat (1) huruf f dilakukan dengan kriteria yang dihitung berdasarkan:
+a. jumlah tempat tidur; atau
+b. luas lantai bangunan.
+(4) Kategori skala dampak Bangkitan Lalu Lintas yang ditimbulkan pada rencana pembangunan pusat kegiatan sebagaimana dimaksud dalam Pasal 3 ayat (1) huruf g dilakukan dengan kriteria yang dihitung berdasarkan:
+a. jumlah dispenser;
+b. jumlah kamar;
+c. jumlah tempat duduk; atau
+d. luas lantai bangunan.
+
+Pasal 6
+(1) Kategori skala dampak Bangkitan Lalu Lintas yang ditimbulkan pada rencana pembangunan permukiman sebagaimana dimaksud dalam Pasal 3 ayat (2) huruf a dan huruf b dilakukan dengan kriteria yang dihitung berdasarkan jumlah unit.
+(2) Kategori skala dampak Bangkitan Lalu Lintas yang ditimbulkan pada rencana pembangunan sebagaimana dimaksud dalam Pasal 3 ayat (2) huruf c dilakukan dengan kriteria yang dihitung berdasarkan:
+a. jumlah kamar; atau
+b. luas lantai bangunan.
+
+Pasal 7
+(1) Kategori skala dampak Bangkitan Lalu Lintas yang ditimbulkan pada rencana pembangunan infrastruktur sebagaimana dimaksud dalam Pasal 3 ayat (3) huruf a sampai dengan huruf e dilakukan dengan kriteria yang dihitung berdasarkan volume lalu lintas sesuai dengan:
+a. hierarki;
+b. tipe; atau
+c. kelas.
+(2) Kategori skala dampak Bangkitan Lalu Lintas yang ditimbulkan pada rencana pembangunan infrastruktur sebagaimana dimaksud dalam Pasal 3 ayat (3) huruf f dan huruf g dilakukan dengan kriteria yang dihitung berdasarkan kapasitas.
+(3) Kategori skala dampak Bangkitan Lalu Lintas yang ditimbulkan pada rencana pembangunan infrastruktur lain sebagaimana dimaksud dalam Pasal 3 ayat (3) huruf h dilakukan dengan kriteria yang dihitung berdasarkan volume lalu lintas.
+(4) Rencana pembangunan infrastruktur lain sebagaimana dimaksud pada ayat (3) yang merupakan akses dari/ke jalan eksisting wajib memiliki Analisis Dampak Lalu Lintas.
+(5) Dalam hal rencana pembangunan infrastruktur lain sebagaimana dimaksud pada ayat (4) menghubungkan jalan yang belum pernah ada, tidak dilakukan Analisis Dampak Lalu Lintas.
+
+Pasal 8
+(1) Dalam hal rencana pengembangan pusat kegiatan dan permukiman sebagaimana dimaksud dalam Pasal 3 ayat (1) dan ayat (2) dilakukan lebih besar dari 30% (tiga puluh persen) dari kondisi awal, wajib dilakukan Analisis Dampak Lalu Lintas.
+(2) Dalam hal rencana pengembangan infrastruktur sebagaimana dimaksud dalam Pasal 3 ayat (3) dilakukan lebih besar dari 50% (lima puluh persen) dari fasilitas utama atau pokok, wajib dilakukan Analisis Dampak Lalu Lintas.
+
+Pasal 9
+Dalam hal dilakukan perubahan terhadap fungsi peruntukan bangunan dari fungsi awal sebagaimana dimaksud dalam Pasal 3, wajib dilakukan Analisis Dampak Lalu Lintas.
+
+Pasal 10
+Kriteria ukuran wajib kategori skala dampak Bangkitan Lalu Lintas sebagaimana dimaksud dalam Pasal 5, Pasal 6, dan Pasal 7 tercantum dalam Lampiran I yang merupakan bagian tidak terpisahkan dari Peraturan Menteri ini.
+
+Bagian Ketiga
+Penyusunan Analisis Dampak Lalu Lintas
+
+Pasal 11
+(1) Pengembang atau Pembangun pusat kegiatan, permukiman, dan infrastruktur wajib melaksanakan Analisis Dampak Lalu Lintas sesuai dengan skala dampak Bangkitan Lalu Lintas.
+(2) Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) dilakukan dengan ketentuan sebagai berikut:
+a. untuk kegiatan dengan Bangkitan Lalu Lintas tinggi, Pengembang atau Pembangun diwajibkan untuk menyampaikan dokumen hasil Analisis Dampak Lalu Lintas yang disusun oleh tenaga ahli yang memiliki Sertifikat Kompetensi Penyusun Analisis Dampak Lalu Lintas;
+b. untuk kegiatan dengan Bangkitan Lalu Lintas sedang, Pengembang atau Pembangun diwajibkan untuk menyampaikan rekomendasi teknis penanganan dampak lalu lintas yang disusun oleh tenaga ahli yang memiliki Sertifikat Kompetensi Penyusun Analisis Dampak Lalu Lintas; atau
+c. untuk kegiatan dengan Bangkitan Lalu Lintas rendah, Pengembang atau Pembangun diwajibkan untuk:
+1. memenuhi standar teknis penanganan dampak lalu lintas yang telah ditetapkan oleh Menteri; dan
+2. menyampaikan gambaran umum lokasi dan rencana pembangunan atau pengembangan yang akan dilaksanakan.
+(3) Pengajuan hasil Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (2) dilaksanakan melalui sistem perizinan berusaha terintegrasi secara elektronik.
+(4) Hasil Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (2) dapat diajukan Pengembang atau Pembangun secara elektronik melalui sistem informasi Analisis Dampak Lalu Lintas kepada Menteri, gubernur, atau bupati/wali kota sesuai dengan kewenangannya.
+
+Pasal 12
+(1) Dokumen hasil Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 11 ayat (2) huruf a paling sedikit memuat:
+a. perencanaan dan metodologi Analisis Dampak Lalu Lintas;
+b. analisis kondisi lalu lintas dan angkutan jalan saat ini (eksisting);
+c. analisis bangkitan/tarikan lalu lintas dan angkutan jalan akibat pembangunan berdasarkan kaidah teknis transportasi dengan menggunakan faktor trip rate yang ditetapkan secara nasional;
+d. analisis distribusi perjalanan;
+e. analisis pemilihan moda;
+f. analisis pembebanan perjalanan;
+g. simulasi kinerja lalu lintas yang dilakukan terhadap Analisis Dampak Lalu Lintas;
+h. rekomendasi dan rencana implementasi penanganan dampak lalu lintas;
+i. rincian tanggung jawab Pemerintah Pusat atau Pemerintah Daerah dan Pengembang atau Pembangun dalam penanganan dampak lalu lintas sebagaimana dimaksud dalam huruf h;
+j. rencana pemantauan dan evaluasi; dan
+k. gambaran umum lokasi yang akan dibangun atau dikembangkan.
+(2) Perencanaan dan metodologi Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) huruf a meliputi:
+a. penjelasan rencana pembangunan baru atau pengembangan;
+b. cakupan wilayah kajian berdasarkan rencana pembangunan atau pengembangan;
+c. karakteristik dan intensitas tata guna lahan eksisting maupun kondisi yang akan datang;
+d. metode analisis bangkitan/tarikan perjalanan, distribusi perjalanan, pemilihan moda dan pembebanan jaringan;
+e. kebutuhan pengumpulan data lalu lintas;
+f. penetapan tahun dasar yang dipakai sebagai dasar analisis;
+g. periode analisis paling sedikit 5 (lima) tahun; dan
+h. metodologi penyusunan dokumen hasil Analisis Dampak Lalu Lintas.
+(3) Analisis kondisi lalu lintas dan angkutan jalan saat ini (eksisting) sebagaimana dimaksud pada ayat (1) huruf b meliputi:
+a. kondisi prasarana jalan paling sedikit memuat geometrik jalan, perkerasan jalan, dimensi potongan melintang jalan, fungsi jalan, status jalan, kelas jalan dan perlengkapan jalan;
+b. kondisi lalu lintas eksisting paling sedikit memuat data historis volume lalu lintas, volume gerakan membelok, tundaan membelok, panjang antrian, kecepatan rata-rata kendaraan, waktu perjalanan, okupansi jalan, tingkat pelayanan jalan, pejalan kaki, dan pesepeda; dan
+c. kondisi angkutan jalan paling sedikit memuat jaringan trayek, faktor muat, jenis kendaraan dan waktu tunggu.
+(4) Simulasi kinerja lalu lintas yang dilakukan terhadap Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) huruf g meliputi:
+a. simulasi kinerja lalu lintas tanpa pembangunan;
+b. simulasi kinerja lalu lintas pada saat pembangunan;
+c. simulasi kinerja lalu lintas pada saat operasional; dan
+d. simulasi kinerja lalu lintas dalam jangka waktu paling sedikit 5 (lima) tahun setelah operasional.
+(5) Rekomendasi dan rencana implementasi penanganan dampak sebagaimana dimaksud pada ayat (1) huruf h meliputi:
+a. peningkatan kapasitas ruas dan/atau persimpangan jalan;
+b. penyediaan angkutan umum;
+c. manajemen dan rekayasa lalu lintas pada ruas jalan;
+d. manajemen kebutuhan lalu lintas;
+e. penyediaan fasilitas parkir berupa gedung parkir dan/atau taman parkir;
+f. penyediaan akses keluar dan akses masuk untuk orang, kendaraan pribadi dan kendaraan barang;
+g. penyediaan fasilitas bongkar muat barang;
+h. penataan sirkulasi lalu lintas di dalam kawasan;
+i. penyediaan fasilitas pejalan kaki dan berkemampuan khusus;
+j. penyediaan fasilitas perlengkapan jalan di dalam kawasan;
+k. penyediaan sistem informasi lalu lintas;
+l. penyediaan fasilitas tempat menaikan dan menurunkan penumpang untuk angkutan umum di dalam kawasan; dan/atau
+m. penyediaan fasilitas penyeberangan.
+(6) Rencana pemantauan dan evaluasi sebagaimana dimaksud pada ayat (1) huruf j memuat:
+a. pemantauan oleh Pemerintah Pusat atau Pemerintah Daerah, meliputi:
+1. pemantauan terhadap implementasi dari rekomendasi penanganan dampak; dan
+2. pemantauan terhadap kinerja ruas jalan di sekitar wilayah pembangunan atau pengembangan termasuk akses masuk dan keluar kendaraan di lokasi pusat kegiatan, permukiman, dan infrastruktur;
+b. pemantauan oleh Pengembang atau Pembangun, meliputi:
+1. pemantauan dan evaluasi terhadap akses dan sirkulasi lalu lintas kendaraan di dalam lokasi pusat kegiatan, permukiman, dan infrastruktur;
+2. pemantauan terhadap fasilitas parkir; dan
+3. pemantauan terhadap rambu, marka, dan fasilitas perlengkapan jalan lainnya di dalam lokasi pusat kegiatan, permukiman, dan infrastruktur.
+(7) Gambaran umum lokasi yang akan dibangun atau dikembangkan sebagaimana dimaksud pada ayat (1) huruf k meliputi:
+a. kesesuaian dengan rencana tata ruang wilayah;
+b. peta lokasi yang memuat tentang jenis bangunan, rencana pembangunan baru atau pengembangan;
+c. kondisi fisik sarana dan prasarana lalu lintas dan angkutan jalan di sekitar lokasi rencana pembangunan atau pengembangan;
+d. kondisi sosial ekonomi di sekitar lokasi rencana pembangunan atau pengembangan; dan
+e. kondisi lalu lintas dan pelayanan angkutan jalan yang ada di sekitar lokasi rencana pembangunan baru atau pengembangan.
+
+Pasal 13
+(1) Rekomendasi teknis penanganan dampak lalu lintas sebagaimana dimaksud dalam Pasal 11 ayat (2) huruf b paling sedikit memuat:
+a. analisis kondisi lalu lintas dan angkutan jalan saat ini (eksisting);
+b. simulasi kinerja lalu lintas yang dilakukan terhadap Analisis Dampak Lalu Lintas;
+c. rekomendasi dan rencana implementasi penanganan dampak Lalu Lintas;
+d. rincian tanggung jawab Pemerintah Pusat atau Pemerintah Daerah dan Pengembang atau Pembangun dalam penanganan dampak lalu lintas sebagaimana dimaksud dalam huruf c;
+e. rencana pemantauan dan evaluasi; dan
+f. gambaran umum lokasi yang akan dibangun atau dikembangkan.
+(2) Analisis kondisi lalu lintas dan angkutan jalan saat ini (eksisting) sebagaimana dimaksud pada ayat (1) huruf a meliputi:
+a. kondisi prasarana jalan paling sedikit memuat geometrik jalan, perkerasan jalan, dimensi potongan melintang jalan, fungsi jalan, status jalan, kelas jalan dan perlengkapan jalan;
+b. kondisi lalu lintas eksisting paling sedikit memuat data historis volume lalu lintas, volume gerakan membelok, tundaan membelok, panjang antrian, kecepatan rata-rata kendaraan, waktu perjalanan, okupansi jalan, tingkat pelayanan jalan, pejalan kaki, dan pesepeda; dan
+c. kondisi angkutan jalan paling sedikit memuat jaringan trayek, faktor muat, jenis kendaraan dan waktu tunggu.
+(3) Simulasi kinerja lalu lintas yang dilakukan terhadap Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) huruf b meliputi:
+a. simulasi kinerja lalu lintas tanpa pembangunan;
+b. simulasi kinerja lalu lintas pada saat pembangunan;
+c. simulasi kinerja lalu lintas pada saat operasional; dan
+d. simulasi kinerja lalu lintas dalam jangka waktu paling sedikit 5 (lima) tahun setelah operasional.
+(4) Rekomendasi dan rencana implementasi penanganan dampak sebagaimana dimaksud pada ayat (1) huruf c meliputi:
+a. peningkatan kapasitas ruas dan/atau persimpangan jalan;
+b. penyediaan angkutan umum;
+c. manajemen dan rekayasa lalu lintas pada ruas jalan;
+d. manajemen kebutuhan lalu lintas;
+e. penyediaan fasilitas parkir berupa gedung parkir dan/atau taman parkir;
+f. penyediaan akses keluar dan akses masuk untuk orang, kendaraan pribadi dan kendaraan barang;
+g. penyediaan fasilitas bongkar muat barang;
+h. penataan sirkulasi lalu lintas di dalam kawasan;
+i. penyediaan fasilitas pejalan kaki dan berkemampuan khusus;
+j. penyediaan fasilitas perlengkapan jalan di dalam kawasan;
+k. penyediaan sistem informasi lalu lintas;
+l. penyediaan fasilitas tempat menaikan dan menurunkan penumpang untuk angkutan umum di dalam kawasan; dan/atau
+m. penyediaan fasilitas penyeberangan.
+(5) Rencana pemantauan dan evaluasi sebagaimana dimaksud pada ayat (1) huruf e memuat:
+a. pemantauan oleh Pemerintah Pusat atau Pemerintah Daerah, meliputi:
+1. pemantauan terhadap implementasi dari rekomendasi penanganan dampak; dan
+2. pemantauan terhadap kinerja ruas jalan di sekitar wilayah pembangunan atau pengembangan termasuk akses masuk dan keluar kendaraan di lokasi pusat kegiatan, permukiman, dan infrastruktur;
+b. pemantauan oleh Pengembang atau Pembangun, meliputi:
+1. pemantauan dan evaluasi terhadap akses dan sirkulasi lalu lintas kendaraan di dalam lokasi pusat kegiatan, permukiman, dan infrastruktur;
+2. pemantauan terhadap fasilitas parkir; dan
+3. pemantauan terhadap rambu, marka, dan fasilitas perlengkapan jalan lainnya di dalam lokasi pusat kegiatan, permukiman, dan infrastruktur.
+(6) Gambaran umum lokasi yang akan dibangun atau dikembangkan sebagaimana dimaksud pada ayat (1) huruf f meliputi:
+a. kesesuaian dengan rencana tata ruang wilayah;
+b. peta lokasi yang memuat tentang jenis bangunan, rencana pembangunan baru atau pengembangan;
+c. kondisi fisik sarana dan prasarana lalu lintas dan angkutan jalan di sekitar lokasi rencana pembangunan atau pengembangan;
+d. kondisi sosial ekonomi di sekitar lokasi rencana pembangunan atau pengembangan; dan
+e. kondisi lalu lintas dan pelayanan angkutan jalan yang ada di sekitar lokasi rencana pembangunan baru atau pengembangan.
+
+Pasal 14
+(1) Pemenuhan standar teknis penanganan dampak lalu lintas sebagaimana dimaksud dalam Pasal 11 ayat (2) huruf c angka 1 paling sedikit memuat:
+a. rekomendasi dan rencana implementasi penanganan dampak lalu lintas;
+b. rincian tanggung jawab Pemerintah Pusat atau Pemerintah Daerah dan Pengembang atau Pembangun dalam penanganan dampak lalu lintas sebagaimana dimaksud dalam huruf a; dan
+c. rencana pemantauan dan evaluasi.
+(2) Rekomendasi dan rencana implementasi penanganan dampak lalu lintas sebagaimana dimaksud pada ayat (1) huruf a meliputi:
+a. manajemen dan rekayasa lalu lintas pada area pembangunan atau pengembangan;
+b. manajemen kebutuhan lalu lintas pada area pembangunan atau pengembangan;
+c. penyediaan fasilitas parkir berupa gedung parkir dan/atau taman parkir;
+d. penyediaan akses keluar dan akses masuk untuk orang, kendaraan pribadi dan kendaraan barang;
+e. penyediaan fasilitas bongkar muat barang;
+f. penataan sirkulasi lalu lintas di dalam kawasan pada area pembangunan atau pengembangan;
+g. penyediaan fasilitas pejalan kaki dan berkemampuan berkebutuhan khusus pada area pembangunan atau pengembangan;
+h. penyediaan fasilitas perlengkapan jalan pada area pembangunan atau pengembangan; dan/atau
+i. penyediaan fasilitas penyeberangan.
+(3) Gambaran umum lokasi dan rencana pembangunan atau pengembangan yang akan dilaksanakan sebagaimana dimaksud dalam Pasal 11 ayat (2) huruf c angka 2 meliputi:
+a. kesesuaian dengan rencana tata ruang wilayah;
+b. peta lokasi dan gambar tata letak bangunan (site plan) dan/atau detail engineering design (DED) bangunan;
+c. bukti kepemilikan atau penguasaan lahan;
+d. foto kondisi lokasi pembangunan baru atau pengembangan; dan
+e. penjelasan rencana pembangunan baru atau pengembangan.
+
+Bagian Keempat
+Penilaian Hasil Analisis Dampak Lalu Lintas
+
+Pasal 15
+(1) Untuk memperoleh persetujuan hasil Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 11, Pengembang atau Pembangun harus menyampaikan hasil Analisis Dampak Lalu Lintas kepada:
+a. Menteri, untuk jalan nasional;
+b. gubernur, untuk jalan provinsi;
+c. bupati, untuk jalan kabupaten dan/atau jalan desa; atau
+d. wali kota, untuk jalan kota.
+(2) Penyampaian hasil Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) sesuai dengan skala dampak Bangkitan Lalu Lintas kegiatan yang ditimbulkan.
+(3) Penyampaian hasil Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (2) disampaikan melalui sistem elektronik yang terintegrasi dengan perizinan berusaha lingkungan hidup.
+(4) Sistem elektronik sebagaimana dimaksud pada ayat (3) dilaksanakan pada kementerian yang menyelenggarakan urusan pemerintahan di bidang lingkungan hidup dan kehutanan, dan lembaga pemerintah yang menyelenggarakan urusan pemerintahan di bidang koordinasi penanaman modal melalui pelayanan terpadu satu pintu.
+(5) Format surat permohonan persetujuan hasil Analisis Dampak Lalu Lintas sesuai dengan skala dampak Bangkitan Lalu Lintas sebagaimana dimaksud pada ayat (2) tercantum dalam Lampiran II yang merupakan bagian tidak terpisahkan dari Peraturan Menteri ini.
+
+Pasal 16
+Dalam hal rencana pembangunan pusat kegiatan, permukiman, dan infrastruktur berlokasi di antara 2 (dua) atau lebih status jalan, persetujuan hasil Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 15 ayat (1) diberikan oleh:
+a. Menteri, untuk pusat kegiatan, permukiman, dan infrastruktur berlokasi di antara jalan nasional dan/atau jalan provinsi, jalan kabupaten, dan/atau jalan desa, atau jalan kota setelah memperoleh pertimbangan dari gubernur, atau bupati/wali kota; atau
+b. gubernur, untuk pusat kegiatan, permukiman, dan infrastruktur berlokasi di antara jalan provinsi dan/atau jalan kabupaten, dan/atau jalan desa atau jalan kota setelah memperoleh pertimbangan dari bupati/wali kota.
+
+Pasal 17
+Persetujuan hasil Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 15 merupakan salah satu persyaratan Pengembang atau Pembangun untuk memperoleh perizinan berusaha dalam kegiatan pendirian bangunan dan persyaratan pengajuan penilaian dokumen lingkungan hidup.
+
+Pasal 18
+(1) Persetujuan hasil Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 15 ayat (1) diberikan dalam jangka waktu paling lama 3 (tiga) hari kerja setelah dokumen diterima secara lengkap dan memenuhi persyaratan.
+(2) Dalam pemberian persetujuan sebagaimana dimaksud pada ayat (1), Menteri memberikan pendelegasian kewenangan persetujuan hasil Analisis Dampak lalu Lintas kepada:
+a. Direktur Jenderal, untuk jalan nasional; dan
+b. Kepala Badan, untuk jalan nasional yang berada di wilayah Jakarta, Bogor, Depok, Tangerang dan Bekasi.
+(3) Pemberian persetujuan hasil Analisis Dampak lalu Lintas sebagaimana dimaksud pada ayat (2) dikenai biaya sebagai Penerimaan Negara Bukan Pajak, kecuali untuk pembangunan perumahan yang diperuntukkan bagi Masyarakat Berpenghasilan Rendah (MBR).
+
+Pasal 19
+(1) Pemberian persetujuan sebagaimana dimaksud dalam Pasal 18 diberikan setelah dilakukan penilaian oleh Tim Evaluasi Penilai Analisis Dampak Lalu Lintas yang dibentuk oleh Direktur Jenderal, gubernur, atau bupati/wali kota sesuai dengan kewenangannya.
+(2) Tim Evaluasi Penilai sebagaimana dimaksud pada ayat (1) terdiri dari unsur pembina sarana dan prasarana lalu lintas dan angkutan jalan.
+(3) Tim Evaluasi Penilai sebagaimana dimaksud pada ayat (2) merupakan aparatur sipil negara yang memiliki Sertifikat Kompetensi Penilai Analisis Dampak Lalu Lintas.
+(4) Untuk memperoleh sertifikat kompetensi sebagaimana dimaksud pada ayat (3) wajib mengikuti pendidikan dan pelatihan.
+(5) Sertifikat Kompetensi Penilai Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (3) diterbitkan oleh Direktur Jenderal.
+
+Pasal 20
+(1) Pemberian persetujuan berupa dokumen Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 19 ayat (1), untuk kegiatan dengan skala dampak Bangkitan Lalu Lintas tinggi diberikan setelah mendapat persetujuan teknis oleh Tim Evaluasi Penilai.
+(2) Tim Evaluasi Penilai sebagaimana dimaksud pada ayat (1) mempunyai tugas:
+a. melakukan penilaian terhadap hasil Analisis Dampak Lalu Lintas yang berupa dokumen Analisis Dampak Lalu Lintas untuk kegiatan dengan skala Bangkitan Lalu Lintas tinggi; dan
+b. menilai kelayakan persetujuan yang diusulkan dalam hasil Analisis Dampak Lalu Lintas untuk kegiatan dengan skala Bangkitan Lalu Lintas tinggi.
+(3) Untuk mendapatkan persetujuan teknis Tim Evaluasi Penilai sebagaimana dimaksud pada ayat (1), dilakukan pembahasan dokumen Analisis Dampak Lalu Lintas dengan Pengembang atau Pembangun yang dituangkan dalam berita acara.
+
+Pasal 21
+(1) Pemberian persetujuan berupa rekomendasi teknis sebagaimana dimaksud dalam Pasal 19 ayat (1), untuk kegiatan dengan skala dampak bangkitan Lalu Lintas sedang diberikan setelah dilakukan penilaian terhadap hasil Analisis Dampak Lalu Lintas oleh dari Tim Evaluasi Penilai.
+(2) Pemberian persetujuan berupa rekomendasi teknis untuk kegiatan dengan skala dampak bangkitan Lalu Lintas sedang sebagaimana dimaksud pada ayat (1) tanpa melalui pembahasan dengan Pengembang atau Pembangun.
+
+Pasal 22
+(1) Tim Evaluasi Penilai sebagaimana dimaksud dalam Pasal 19 ayat (2) dengan susunan keanggotaan terdiri atas:
+a. ketua;
+b. sekretaris; dan
+c. anggota.
+(2) Tim Evaluasi Penilai sebagaimana dimaksud pada ayat (1) sebanyak 3 (tiga) orang.
+(3) Biaya yang ditimbulkan untuk melaksanakan kegiatan Tim Evaluasi Penilai sebagaimana dimaksud pada ayat (1) dibebankan pada anggaran pendapatan dan belanja negara atau anggaran pendapatan dan belanja daerah sesuai dengan kewenangannya.
+
+Pasal 23
+(1) Hasil penilaian Tim Evaluasi Penilai sebagaimana dimaksud dalam Pasal 19 disampaikan kepada Direktur Jenderal, Kepala Badan, gubernur, atau bupati/wali kota sesuai dengan kewenangannya.
+(2) Hasil penilaian Tim Evaluasi Penilai sebagaimana dimaksud pada ayat (1) yang dinyatakan belum sesuai dan/atau belum memenuhi persyaratan, Direktur Jenderal, Kepala Badan, gubernur, atau bupati/wali kota sesuai dengan kewenangannya mengembalikan hasil Analisis Dampak Lalu Lintas kepada Pengembang atau Pembangun untuk disempurnakan.
+(3) Hasil penilaian Tim Evaluasi Penilai sebagaimana dimaksud pada ayat (1) yang dinyatakan memenuhi persyaratan, Direktur Jenderal, Kepala Badan, gubernur, atau bupati/wali kota sesuai dengan kewenangannya meminta Pengembang atau Pembangun membuat surat pernyataan kesanggupan melaksanakan kewajiban Analisis Dampak Lalu Lintas.
+(4) Surat pernyataan kesanggupan sebagaimana dimaksud pada ayat (3) ditandatangani oleh penanggung jawab perusahaan di atas materai.
+(5) Pernyataan kesanggupan melaksanakan kewajiban sebagaimana dimaksud pada ayat (3) harus terpenuhi sebelum dan selama pusat kegiatan, permukiman, dan infrastruktur dioperasikan.
+(6) Setelah Pengembang atau Pembangun menyampaikan surat pernyataan kesanggupan melaksanakan kewajiban sebagaimana dimaksud pada ayat (3), Direktur Jenderal, Kepala Badan, gubernur, atau bupati/wali kota sesuai dengan kewenangannya menerbitkan persetujuan hasil Analisis Dampak Lalu Lintas.
+
+Pasal 24
+Format surat pernyataan kesanggupan melaksanakan kewajiban Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 23 ayat (3) tercantum dalam Lampiran III yang merupakan bagian tidak terpisahkan dari Peraturan Menteri ini.
+
+BAB III
+KOMPETENSI TENAGA AHLI PENYUSUN
+
+Pasal 25
+(1) Tenaga Ahli Penyusun sebagaimana dimaksud dalam Pasal 11 ayat (2) huruf a dan huruf b terdiri atas:
+a. tenaga ahli yang berasal dari dosen; dan
+b. tenaga ahli yang berasal dari non dosen.
+(2) Tenaga ahli yang berasal dari dosen sebagaimana dimaksud pada ayat (1) huruf a harus memenuhi persyaratan:
+a. pendidikan S-2 (Strata Dua) atau S-3 (Strata Tiga) di bidang transportasi/teknik sipil/planologi;
+b. memiliki pengalaman mengajar Analisis Dampak Lalu Lintas paling lama 7 (tujuh) tahun;
+c. memiliki nomor induk dosen nasional yang masih aktif;
+d. sehat jasmani, rohani, dan bebas narkoba yang dibuktikan dengan surat keterangan dokter;
+e. warga negara Indonesia; dan
+f. usia paling tinggi 60 (enam puluh) tahun.
+(3) Tenaga ahli yang berasal dari non dosen sebagaimana dimaksud pada ayat (1) huruf b harus memenuhi persyaratan:
+a. pendidikan D-III (Diploma Tiga) di bidang lalu lintas dan angkutan jalan/teknik sipil, D-IV (Diploma Empat) di bidang lalu lintas dan angkutan jalan/transportasi darat, atau S-1 (Strata Satu), S-2 (Strata Dua), dan S-3 (Strata Tiga) di bidang transportasi/teknik sipil/planologi;
+b. sehat jasmani, rohani, dan bebas narkoba yang dibuktikan dengan surat keterangan dokter;
+c. warga negara Indonesia; dan
+d. usia paling tinggi 55 (lima puluh lima) tahun.
+
+Pasal 26
+(1) Tenaga Ahli Penyusun sebagaimana dimaksud dalam Pasal 25 wajib memiliki kompetensi penyusun Analisis Dampak Lalu Lintas.
+(2) Kompetensi penyusun Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) terdiri atas:
+a. Tenaga Ahli Penyusun Analisis Dampak Lalu Lintas tingkat pratama; dan
+b. Tenaga Ahli Penyusun Analisis Dampak Lalu Lintas tingkat utama.
+(3) Kompetensi penyusun Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (2), mampu dan memahami:
+a. sikap dan perilaku sebagai tenaga ahli yang profesional dengan dilandasi etika profesi dan menjunjung tinggi hukum dan hak asasi manusia;
+b. peraturan perundang-undangan dalam proses kegiatan Analisis Dampak Lalu Lintas;
+c. pelaksanaan Analisis Dampak Lalu Lintas;
+d. teknik pengumpulan dan pengolahan data Analisis Dampak Lalu Lintas;
+e. teknik pelaksanaan Analisis Dampak Lalu Lintas;
+f. perencanaan dan pemodelan transportasi;
+g. tata cara pelaksanaan andalalin kawasan bangkitan, tarikan dan pembangunan prasarana transportasi baru;
+h. penilaian Analisis Dampak Lalu Lintas;
+i. perancangan proses penilaian Analisis Dampak Lalu Lintas; dan
+j. penyusunan usulan rekomendasi hasil Analisis Dampak Lalu Lintas.
+
+Pasal 27
+(1) Kompetensi penyusun Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 26 ayat (1) diberikan setelah mengikuti pendidikan dan pelatihan kualifikasi penyusun Analisis Dampak Lalu Lintas.
+(2) Kompetensi penyusun Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) dibuktikan dengan surat tanda tamat pendidikan dan pelatihan.
+(3) Pendidikan dan pelatihan sebagaimana dimaksud pada ayat (1) tidak dapat diikuti oleh aparatur sipil negara.
+(4) Aparatur sipil negara sebagaimana dimaksud pada ayat (3) dikecualikan untuk akademisi atau dosen yang karena tugasnya sebagaimana fungsi tridharma perguruan tinggi dalam penelitian dan pengembangan, serta pengabdian kepada masyarakat.
+
+Pasal 28
+(1) Pendidikan dan pelatihan sebagaimana dimaksud dalam Pasal 27 ayat (1) terdiri atas:
+a. pendidikan dan pelatihan penyusun Analisis Dampak Lalu Lintas; dan
+b. pendidikan dan pelatihan penyegaran penyusun Analisis Dampak Lalu Lintas.
+(2) Pendidikan dan pelatihan penyusun Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) huruf a merupakan persyaratan untuk mendapatkan kompetensi Tenaga Ahli Penyusun Analisis Dampak Lalu Lintas.
+(3) Pendidikan dan pelatihan penyegaran penyusun Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) huruf b diperuntukkan bagi Tenaga Ahli Penyusun yang memiliki kompetensi penyusun Analisis Dampak Lalu Lintas dan telah melakukan penyusunan Analisis Dampak Lalu Lintas paling lama 3 (tiga) tahun.
+
+Pasal 29
+(1) Untuk mengikuti pendidikan dan pelatihan sebagaimana dimaksud dalam Pasal 28, calon peserta diusulkan oleh:
+a. perseorangan;
+b. badan usaha; atau
+c. badan hukum yang menyelenggarakan penyediaan jasa konsultansi sesuai dengan ketentuan peraturan perundang-undangan.
+(2) Pengusulan sebagaimana dimaksud pada ayat (1) ditujukan kepada penyelenggara pendidikan dan pelatihan penilai Analisis Dampak Lalu Lintas.
+
+Pasal 30
+(1) Peserta yang telah lulus pendidikan dan pelatihan sebagaimana dimaksud dalam Pasal 28 ayat (1) huruf a diusulkan untuk mengikuti uji kompetensi oleh:
+a. perseorangan;
+b. badan usaha; atau
+c. badan hukum yang menyelenggarakan penyediaan jasa konsultansi sesuai dengan ketentuan peraturan perundang-undangan.
+(2) Pengusulan sebagaimana dimaksud pada ayat (1) disampaikan kepada Direktur Jenderal.
+(3) Untuk mengikuti uji kompetensi penyusun Analisis Dampak Lalu Lintas harus memenuhi persyaratan sebagai berikut:
+a. memiliki tanda kelulusan pendidikan dan pelatihan penyusun Analisis Dampak Lalu Lintas;
+b. daftar riwayat hidup singkat tenaga ahli sebagai calon peserta;
+c. lulusan D-III (Diploma Tiga) wajib memiliki pengalaman di bidang lalu lintas dan angkutan jalan sebagai asisten tenaga ahli paling sedikit 3 (tiga) tahun yang dibuktikan dengan fotokopi surat perintah kerja/surat keterangan pengalaman kerja dari pemberi kerja;
+d. fotokopi ijazah D-III (Diploma Tiga) di bidang lalu lintas dan angkutan jalan/teknik sipil, D-IV (Diploma Empat) di bidang lalu lintas dan angkutan jalan/transportasi darat, atau S-1 (Strata Satu), S-2 (Strata Dua), dan S-3 (Strata Tiga) di bidang transportasi/teknik sipil/planologi; dan
+e. pas foto ukuran $3 \times 4$ sebanyak 3 (tiga) lembar berpakaian kemeja dengan latar belakang warna merah.
+
+Pasal 31
+(1) Dalam pelaksanaan uji kompetensi sebagaimana dimaksud dalam Pasal 30, Direktur Jenderal membentuk tim penguji kompetensi Tenaga Ahli Penyusun.
+(2) Tim penguji kompetensi sebagaimana dimaksud pada ayat (1) terdiri atas:
+a. ketua;
+b. wakil ketua; dan
+c. anggota.
+(3) Tim penguji kompetensi sebagaimana dimaksud pada ayat (2) memiliki masa kerja 3 (tiga) tahun dan dapat diangkat kembali pada periode berikutnya.
+
+Pasal 32
+(1) Penilaian uji kompetensi penyusun sebagaimana dimaksud dalam Pasal 31 meliputi:
+a. pemenuhan persyaratan administrasi;
+b. perhitungan nilai angka keahlian, meliputi:
+1. pengetahuan di bidang Analisis Dampak Lalu Lintas, dengan bobot penilaian 60% (enam puluh persen);
+2. pengalaman di bidang Analisis Dampak Lalu Lintas, dengan bobot penilaian 30% (tiga puluh persen); dan
+3. pemahaman dan sikap perilaku dalam pelaksanaan penyusunan Analisis Dampak Lalu Lintas, dengan bobot penilaian 10% (sepuluh persen).
+(2) Perhitungan nilai angka keahlian sebagaimana dimaksud pada ayat (1) huruf b diperoleh dengan rata-rata sebagai berikut:
+a. nilai 85 (delapan puluh lima) sampai dengan 90,9 (sembilan puluh koma sembilan), untuk penyusun Analisis Dampak Lalu Lintas pratama; dan
+b. nilai 91 (sembilan puluh satu) sampai dengan 100 (seratus), untuk penyusun Analisis Dampak Lalu Lintas utama.
+(3) Hasil penilaian uji kompetensi sebagaimana dimaksud pada ayat (1) dituangkan dalam berita acara hasil uji kompetensi.
+(4) Berita acara sebagaimana dimaksud pada ayat (3) memuat keterangan peserta uji dinyatakan lulus atau tidak lulus.
+(5) Bagi peserta uji kompetensi yang dinyatakan lulus sebagaimana dimaksud pada ayat (4) diberikan Sertifikat Kompetensi Penyusun Analisis Dampak Lalu Lintas.
+(6) Sertifikat Kompetensi Penyusun Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (5) sebagai dasar untuk mendapatkan keputusan kompetensi penyusun yang ditetapkan oleh Direktur Jenderal.
+(7) Selain diberikan sertifikat lulus uji kompetensi sebagaimana dimaksud pada ayat (6), penyusun Analisis Dampak Lalu Lintas diberikan tanda kualifikasi kompetensi penyusun Analisis Dampak Lalu Lintas.
+
+Pasal 33
+Bagi peserta uji kompetensi yang dinyatakan tidak lulus sebagaimana dimaksud dalam Pasal 32 ayat (4) diberikan kesempatan untuk mengikuti ujian ulang pada periode berikutnya.
+
+Pasal 34
+(1) Sertifikat Kompetensi Penyusun Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 32 ayat (5) paling sedikit memuat:
+a. nama;
+b. tempat tanggal lahir;
+c. nomor induk kependudukan;
+d. instansi;
+e. nomor registrasi kompetensi penyusun Analisis Dampak Lalu Lintas;
+f. tingkatan kompetensi penyusun Analisis Dampak Lalu Lintas;
+g. nomor Sertifikat Kompetensi Penyusun Analisis Dampak Lalu Lintas;
+h. nomor dan tanggal berita acara hasil uji kompetensi; dan
+i. tanda tangan penerbit sertifikat.
+(2) Sertifikat Kompetensi Penyusun Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) berlaku selama 5 (lima) tahun sejak tanggal diterbitkan dan dapat diperpanjang melalui uji kompetensi ulang yang dilakukan oleh Direktur Jenderal.
+
+Pasal 35
+Keputusan kompetensi penyusun sebagaimana dimaksud dalam Pasal 32 ayat (6) paling sedikit memuat:
+a. nama;
+b. tempat tanggal lahir;
+c. nomor induk kependudukan;
+d. instansi;
+e. nomor registrasi kompetensi penyusun Analisis Dampak Lalu Lintas;
+f. tingkatan kompetensi penyusun Analisis Dampak Lalu Lintas; dan
+g. nomor Sertifikat Kompetensi Penyusun Analisis Dampak Lalu Lintas.
+
+Pasal 36
+Tanda kualifikasi kompetensi penyusun sebagaimana dimaksud dalam Pasal 32 ayat (7) terbuat dari bahan kuningan dengan ukuran panjang 40 (empat puluh) milimeter, memiliki lebar 40 (empat puluh) milimeter, dan memiliki ketebalan 2 (dua) milimeter.
+
+Pasal 37
+(1) Tanda kualifikasi kompetensi penyusun Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 36 wajib dipasang atau dikenakan oleh Tenaga Ahli Penyusun Analisis Dampak Lalu Lintas pada saat menjalankan tugas.
+(2) Tanda kualifikasi kompetensi penyusun Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) dipasang atau dikenakan di bagian kanan atas pakaian pada waktu melaksanakan tugas.
+
+Pasal 38
+Format berita acara hasil uji kompetensi sebagaimana dimaksud dalam Pasal 32 ayat (3), Sertifikat Kompetensi Tenaga Ahli Penyusun sebagaimana dimaksud dalam Pasal 32 ayat (5), keputusan kompetensi Tenaga Ahli Penyusun sebagaimana dimaksud dalam Pasal 32 ayat (6), dan bentuk tanda kualifikasi kompetensi Tenaga Ahli Penyusun sebagaimana dimaksud dalam Pasal 32 ayat (7) tercantum dalam Lampiran IV yang merupakan bagian tidak terpisahkan dari Peraturan Menteri ini.
+
+BAB IV
+KOMPETENSI PENILAI ANALISIS DAMPAK LALU LINTAS
+
+Pasal 39
+(1) Tim Evaluasi Penilai Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 19 wajib memiliki kompetensi penilai Analisis Dampak Lalu Lintas.
+(2) Kompetensi penilai Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1), mampu dan memahami:
+a. sikap dan perilaku sebagai petugas/abdi negara yang profesional dengan dilandasi etika profesi dan menjunjung tinggi hukum dan hak asasi manusia;
+b. peraturan perundang-undangan dalam proses kegiatan Analisis Dampak Lalu Lintas;
+c. pelaksanaan Analisis Dampak Lalu Lintas;
+d. teknik pengumpulan dan pengolahan data Analisis Dampak Lalu Lintas;
+e. teknik pelaksanaan Analisis Dampak Lalu Lintas;
+f. perencanaan dan pemodelan transportasi;
+g. tata cara pelaksanaan Analisis Dampak Lalu Lintas kawasan bangkitan, tarikan dan pembangunan prasarana transportasi baru;
+h. penilaian Analisis Dampak Lalu Lintas;
+i. perancangan proses penilaian Analisis Dampak Lalu Lintas; dan
+j. teknik penilaian rekomendasi hasil Analisis Dampak Lalu Lintas.
+(3) Kompetensi penilai Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) diberikan setelah mengikuti pendidikan dan pelatihan penilai Analisis Dampak Lalu Lintas.
+(4) Kompetensi penilai Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) dibuktikan dengan surat tanda tamat pendidikan dan pelatihan.
+(5) Untuk mengikuti pendidikan dan pelatihan sebagaimana dimaksud pada ayat (3) harus memenuhi persyaratan:
+a. pendidikan D-IV (Diploma Empat) atau S-1 (Strata Satu);
+b. bertugas di bidang lalu lintas dan/atau angkutan jalan;
+c. memiliki pengalaman kerja paling singkat 2 (dua) tahun;
+d. setiap unsur penilaian pelaksanaan pekerjaan dalam daftar penilaian pelaksanaan pekerjaan pegawai negeri sipil paling sedikit bernilai baik dalam 1 (satu) tahun terakhir;
+e. sehat jasmani dan rohani yang dibuktikan dengan surat keterangan dokter; dan
+f. usia paling tinggi 55 (lima puluh lima) tahun.
+
+Pasal 40
+(1) Pendidikan dan pelatihan sebagaimana dimaksud dalam Pasal 39 ayat (3) terdiri atas:
+a. pendidikan dan pelatihan penilai Analisis Dampak Lalu Lintas; dan
+b. pendidikan dan pelatihan penyegaran penilai Analisis Dampak Lalu Lintas.
+(2) Pendidikan dan pelatihan penilai Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) huruf a merupakan persyaratan untuk mendapatkan kompetensi penilai Analisis Dampak Lalu Lintas.
+(3) Pendidikan dan pelatihan penyegaran penilai Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) huruf b diperuntukkan bagi penilai Analisis Dampak Lalu Lintas yang telah melaksanakan tugas paling lama 3 (tiga) tahun.
+
+Pasal 41
+(1) Untuk mengikuti pendidikan dan pelatihan sebagaimana dimaksud dalam Pasal 40, peserta diusulkan oleh Direktur Jenderal, Kepala Badan, gubernur, atau bupati/wali kota sesuai dengan kewenangannya.
+(2) Pengusulan sebagaimana dimaksud pada ayat (1) ditujukan kepada penyelenggara pendidikan dan pelatihan penilai Analisis Dampak Lalu Lintas dengan tembusan Direktur Jenderal.
+(3) Pengusulan sebagaimana dimaksud pada ayat (1) harus dilengkapi dengan:
+a. ijazah pendidikan terakhir;
+b. surat keputusan jabatan terakhir;
+c. penilaian prestasi kerja terakhir; dan
+d. pas foto ukuran $3 \times 4$ (tiga kali empat) sebanyak 3 (tiga) lembar berpakaian dinas dengan latar belakang warna merah.
+
+Pasal 42
+(1) Peserta yang telah lulus pendidikan dan pelatihan sebagaimana dimaksud dalam Pasal 40 ayat (1) huruf a diusulkan untuk mengikuti uji kompetensi oleh Direktur Jenderal, Kepala Badan, gubernur, atau bupati/wali kota sesuai dengan kewenangannya.
+(2) Pengusulan sebagaimana dimaksud pada ayat (1) disampaikan kepada Direktur Jenderal.
+(3) Untuk mengikuti uji kompetensi penilai Analisis Dampak Lalu Lintas harus memenuhi persyaratan sebagai berikut:
+a. memiliki tanda kelulusan pendidikan dan pelatihan penilai Analisis Dampak Lalu Lintas;
+b. ijazah pendidikan terakhir;
+c. surat keputusan jabatan terakhir; dan
+d. pas foto ukuran $3 \times 4$ (tiga kali empat) sebanyak 3 (tiga) lembar berpakaian dinas dengan latar belakang warna merah.
+
+Pasal 43
+(1) Dalam pelaksanaan uji kompetensi sebagaimana dimaksud dalam Pasal 42, Direktur Jenderal membentuk tim penguji kompetensi penilai Analisis Dampak Lalu Lintas.
+(2) Tim penguji kompetensi sebagaimana dimaksud pada ayat (1) terdiri atas:
+a. ketua;
+b. wakil ketua; dan
+c. anggota.
+
+Pasal 44
+(1) Penilaian uji kompetensi sebagaimana dimaksud dalam Pasal 43 meliputi:
+a. pengetahuan di bidang Analisis Dampak Lalu Lintas;
+b. pengalaman di bidang Analisis Dampak Lalu Lintas; dan
+c. pemahaman dan sikap perilaku terhadap kode etik pelaksanaan tugas dalam penilaian Analisis Dampak Lalu Lintas.
+(2) Hasil penilaian uji kompetensi sebagaimana dimaksud pada ayat (1) dituangkan dalam berita acara hasil uji kompetensi.
+(3) Berita acara sebagaimana dimaksud pada ayat (2) memuat keterangan peserta uji dinyatakan lulus atau tidak lulus.
+(4) Bagi peserta uji kompetensi yang dinyatakan lulus sebagaimana dimaksud pada ayat (3) diberikan Sertifikat Kompetensi Penilai Analisis Dampak Lalu Lintas.
+(5) Sertifikat Kompetensi Penilai Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (4) sebagai dasar untuk mendapatkan keputusan kompetensi penilai yang ditetapkan oleh Direktur Jenderal.
+(6) Selain diberikan sertifikat lulus uji kompetensi sebagaimana dimaksud pada ayat (4), penilai Analisis Dampak Lalu Lintas diberikan tanda kualifikasi kompetensi penilai Analisis Dampak Lalu Lintas.
+
+Pasal 45
+Bagi peserta uji kompetensi yang dinyatakan tidak lulus sebagaimana dimaksud dalam Pasal 44 ayat (3) diberikan kesempatan untuk mengikuti ujian ulang pada periode berikutnya.
+
+Pasal 46
+Sertifikat Kompetensi Penilai Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 44 ayat (4) paling sedikit memuat:
+a. nama;
+b. tempat tanggal lahir;
+c. nomor induk pegawai;
+d. instansi;
+e. nomor registrasi kompetensi penilai Analisis Dampak Lalu Lintas;
+f. nomor dan tanggal berita acara hasil uji kompetensi; dan
+g. tanda tangan penerbit sertifikat.
+
+Pasal 47
+Keputusan kompetensi penilai sebagaimana dimaksud dalam Pasal 44 ayat (5) paling sedikit memuat:
+a. nama;
+b. tempat tanggal lahir;
+c. nomor induk pegawai;
+d. pendidikan;
+e. pangkat/golongan;
+f. unit kerja; dan
+g. nomor registrasi kompetensi penilai Analisis Dampak Lalu Lintas.
+
+Pasal 48
+Tanda kualifikasi kompetensi penilai sebagaimana dimaksud dalam Pasal 44 ayat (6) terbuat dari bahan kuningan dengan ukuran panjang 40 (empat puluh) milimeter, memiliki lebar 40 (empat puluh) milimeter, dan memiliki ketebalan 2 (dua) milimeter.
+
+Pasal 49
+(1) Tanda kualifikasi kompetensi penilai Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 48 wajib dipasang atau dikenakan oleh penilai Analisis Dampak Lalu Lintas pada saat menjalankan tugas.
+(2) Tanda kualifikasi kompetensi penilai Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) dipasang atau dikenakan di bagian kanan atas pakaian pada waktu melaksanakan tugas.
+
+Pasal 50
+Format berita acara hasil uji kompetensi penilai sebagaimana dimaksud dalam Pasal 44 ayat (2), sertifikat kompetensi penilai sebagaimana dimaksud dalam Pasal 44 ayat (4), keputusan kompetensi penilai sebagaimana dimaksud dalam Pasal 44 ayat (5), dan bentuk tanda kualifikasi kompetensi penilai sebagaimana dimaksud dalam Pasal 44 ayat (6) tercantum dalam Lampiran V yang merupakan bagian tidak terpisahkan dari Peraturan Menteri ini.
+
+BAB V
+PENGAWASAN ANALISIS DAMPAK LALU LINTAS
+
+Pasal 51
+(1) Tenaga Ahli Penyusun Analisis Dampak Lalu Lintas wajib melaporkan hasil Analisis Dampak Lalu Lintas kepada Direktur Jenderal dalam jangka waktu paling lambat 1 (satu) tahun.
+(2) Berdasarkan laporan sebagaimana dimaksud pada ayat (1), Direktur Jenderal melakukan evaluasi sebagai bahan untuk mengambil kebijakan.
+(3) Format laporan sebagaimana dimaksud pada ayat (1) tercantum dalam Lampiran VI yang merupakan bagian tidak terpisahkan dari Peraturan Menteri ini.
+
+Pasal 52
+(1) Pengembang atau Pembangun wajib melaksanakan kewajiban yang tercantum dalam hasil Analisis Dampak Lalu Lintas yang tertuang dalam surat pernyataan kesanggupan melaksanakan kewajiban Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 23 ayat (3).
+(2) Pengawasan terhadap pelaksanaan pemenuhan kewajiban Pengembang atau Pembangun sebagaimana dimaksud pada ayat (1) dilakukan oleh Tim Monitoring dan Evaluasi Analisis Dampak Lalu Lintas yang dibentuk oleh:
+a. Menteri, untuk jalan nasional;
+b. gubernur, untuk jalan provinsi;
+c. bupati, untuk jalan kabupaten dan/atau jalan desa; atau
+d. wali kota, untuk jalan kota.
+(3) Tim Monitoring dan Evaluasi sebagaimana dimaksud pada ayat (2) terdiri atas unsur:
+a. instansi pembina di bidang sarana dan prasarana lalu lintas dan angkutan jalan, sebagai ketua;
+b. instansi pembina di bidang jalan, sebagai anggota; dan
+c. instansi Kepolisian Negara Republik Indonesia, sebagai anggota.
+(4) Tim Monitoring dan Evaluasi sebagaimana dimaksud pada ayat (3) merupakan aparatur sipil negara dan anggota Kepolisian Negara Republik Indonesia yang memiliki sertifikat tim pengawas Analisis Dampak Lalu Lintas.
+(5) Untuk memperoleh sertifikat sebagaimana dimaksud pada ayat (4), aparatur sipil negara dan anggota Kepolisian Negara Republik Indonesia wajib mengikuti pendidikan dan pelatihan.
+(6) Untuk mengikuti pendidikan dan pelatihan sebagaimana dimaksud pada ayat (5) harus memenuhi persyaratan:
+a. untuk instansi pembina di bidang sarana dan prasarana lalu lintas dan angkutan jalan:
+1. pendidikan paling rendah D-IV (Diploma Empat) atau S-1 (Strata Satu);
+2. jenjang pangkat dan golongan minimal III/a atau penata muda;
+3. bertugas di bidang lalu lintas atau Analisis Dampak Lalu Lintas;
+4. pernah mengikuti pendidikan dan pelatihan Analisis Dampak Lalu Lintas yang dibuktikan dengan surat tanda tamat pendidikan dan pelatihan;
+5. memiliki pengalaman kerja paling sedikit 2 (dua) tahun;
+6. setiap unsur penilaian pelaksanaan pekerjaan dalam daftar penilaian pelaksanaan pekerjaan pegawai negeri sipil paling sedikit bernilai baik dalam 1 (satu) tahun terakhir;
+7. sehat jasmani dan rohani yang dibuktikan dengan surat keterangan dokter; dan
+8. usia paling tinggi 55 (lima puluh lima) tahun.
+b. untuk instansi pembina di bidang jalan:
+1. pendidikan paling rendah D-IV (Diploma Empat) atau S-1 (Strata Satu);
+2. jenjang pangkat dan golongan minimal III/a atau penata muda;
+3. bertugas di bidang lingkungan dan keselamatan jalan;
+4. pernah mengikuti pendidikan dan pelatihan Analisis Dampak Lalu Lintas yang dibuktikan dengan surat tanda tamat pendidikan dan pelatihan;
+5. memiliki pengalaman kerja paling sedikit 2 (dua) tahun;
+6. setiap unsur penilaian pelaksanaan pekerjaan dalam daftar penilaian pelaksanaan pekerjaan pegawai negeri sipil paling sedikit bernilai baik dalam 1 (satu) tahun terakhir;
+7. sehat jasmani dan rohani yang dibuktikan dengan surat keterangan dokter; dan
+8. usia paling tinggi 55 (lima puluh lima) tahun.
+c. untuk instansi Kepolisian Negara Republik Indonesia:
+1. jenjang pangkat perwira minimal Inspektur Polisi Dua;
+2. bertugas di bidang lalu lintas;
+3. memiliki pengalaman kerja paling sedikit 1 (satu) tahun;
+4. pernah mengikuti pendidikan dan pelatihan Analisis Dampak Lalu Lintas yang dibuktikan dengan surat tanda tamat pendidikan dan pelatihan;
+5. memiliki penilaian prestasi kinerja yang baik dalam 1 (satu) tahun terakhir;
+6. sehat jasmani dan rohani yang dibuktikan dengan surat keterangan dokter; dan
+7. usia paling tinggi 55 (lima puluh lima) tahun.
+(7) Sertifikat tim pengawas Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (4) diterbitkan oleh Direktur Jenderal.
+(8) Biaya untuk mendukung kegiatan Tim Monitoring dan Evaluasi dibebankan pada anggaran pendapatan dan belanja negara atau anggaran pendapatan dan belanja daerah sesuai dengan ketentuan peraturan perundang-undangan.
+
+Pasal 53
+(1) Tim Monitoring dan Evaluasi Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 52 ayat (2) melakukan monitoring dan evaluasi secara berkala untuk:
+a. melakukan pemantauan dan pengawasan terhadap pelaksanaan pemenuhan rekomendasi persetujuan hasil Analisis Dampak Lalu Lintas; dan
+b. melakukan evaluasi kesesuaian pelaksanaan mitigasi penanganan dampak terhadap pelaksanaan dan pemenuhan atas persetujuan Analisis Dampak Lalu Lintas yang telah ditetapkan.
+(2) Dalam melakukan monitoring dan evaluasi secara berkala sebagaimana dimaksud pada ayat (1), Tim Monitoring dan Evaluasi dapat melakukan tindakan korektif terhadap rekomendasi hasil Analisis Dampak Lalu Lintas.
+(3) Pelaksanaan monitoring dan evaluasi Analisis Dampak Lalu Lintas secara berkala sebagaimana dimaksud pada ayat (1) dilakukan setelah rekomendasi hasil persetujuan Analisis Dampak Lalu Lintas ditetapkan.
+(4) Pelaksanaan monitoring dan evaluasi sebagaimana dimaksud pada ayat (3) dilakukan pada masa:
+a. konstruksi; dan
+b. operasional.
+(5) Pelaksanaan monitoring dan evaluasi sebagaimana dimaksud pada ayat (4) dilakukan setelah menyampaikan surat pelaksanaan monitoring dan evaluasi kepada Pembangun atau Pengembang.
+(6) Surat pelaksanaan monitoring dan evaluasi sebagaimana dimaksud pada ayat (5) ditandatangani oleh ketua Tim Monitoring dan Evaluasi.
+
+BAB VI
+SANKSI ADMINISTRATIF
+
+Pasal 54
+(1) Hasil pelaksanaan monitoring dan evaluasi Analisis Dampak Lalu Lintas sebagaimana dimaksud dalam Pasal 53 disampaikan kepada Menteri, gubernur, atau bupati/wali kota sesuai dengan kewenangannya.
+(2) Dalam hal berdasarkan hasil pelaksanaan monitoring dan evaluasi Analisis Dampak Lalu Lintas sebagaimana dimaksud pada ayat (1) dinyatakan Pengembang atau Pembangun belum melaksanakan dan memenuhi rekomendasi persetujuan hasil Analisis Dampak Lalu Lintas sebagaimana yang tertuang dalam surat pernyataan kesanggupan, Menteri, gubernur, atau bupati/wali kota sesuai dengan kewenangannya memberikan sanksi administratif sesuai dengan ketentuan peraturan perundang-undangan.
+
+Pasal 55
+(1) Sanksi administratif sebagaimana dimaksud dalam Pasal 54 ayat (2) berupa:
+a. peringatan tertulis;
+b. penghentian sementara kegiatan/pelayanan umum;
+c. denda administratif; dan/atau
+d. pembatalan persetujuan hasil analisis dampak lalu lintas dan/atau perizinan berusaha.
+(2) Sanksi administratif sebagaimana dimaksud pada ayat (1) dapat disampaikan secara elektronik melalui sistem informasi Analisis Dampak Lalu Lintas dan/atau secara langsung oleh instansi terkait.
+
+Pasal 56
+(1) Sanksi administratif berupa peringatan tertulis sebagaimana dimaksud dalam Pasal 55 ayat (1) huruf a dikenai sebanyak 3 (tiga) kali dengan jangka waktu masing-masing 30 (tiga puluh) hari kalender.
+(2) Dalam hal Pengembang atau Pembangun tidak melaksanakan kewajiban setelah berakhirnya jangka waktu peringatan tertulis ke 3 (tiga) sebagaimana dimaksud pada ayat (1) dikenai sanksi administratif berupa penghentian sementara kegiatan dan/atau penghentian sementara pelayanan umum selama 30 (tiga puluh) hari kalender.
+(3) Dalam hal Pengembang atau Pembangun tetap tidak melaksanakan kewajiban setelah berakhirnya jangka waktu sebagaimana dimaksud pada ayat (2), dikenai denda administrasi paling banyak 1% (satu persen) dari nilai kewajiban yang harus dipenuhi oleh pengembang atau pembangun.
+(4) Dalam waktu 10 (sepuluh) hari kalender sejak tanggal pengenaan sanksi denda administratif atau 90 (sembilan puluh) hari kalender sejak pembayaran denda, Pengembang atau Pembangun tidak melaksanakan kewajibannya, dikenai sanksi pembatalan persetujuan hasil Analisis Dampak Lalu Lintas dan/atau perizinan berusaha.
+
+BAB VII
+KETENTUAN PERALIHAN
+
+Pasal 57
+(1) Tenaga Ahli Penyusun yang telah mengikuti pendidikan dan pelatihan sebelum berlakunya Peraturan Menteri ini, dapat diajukan untuk mengikuti uji kompetensi sesuai dengan ketentuan yang telah diatur dalam Peraturan Menteri ini.
+(2) Tanda kualifikasi yang telah ada sebelum berlakunya Peraturan Menteri ini wajib menyesuaikan dengan ketentuan yang telah diatur dalam Peraturan Menteri ini.
+
+Pasal 58
+(1) Persetujuan hasil Analisis Dokumen Lalu Lintas yang telah dikeluarkan sebelum berlakunya Peraturan Menteri ini dinyatakan masih tetap berlaku.
+(2) Permohonan persetujuan hasil Analisis Dokumen Lalu Lintas yang masih dalam proses sebelum berlakunya Peraturan Menteri ini, tetap diproses sesuai dengan ketentuan yang diatur dalam Peraturan Menteri ini.
+
+BAB VIII
+KETENTUAN PENUTUP
+
+Pasal 59
+Pada saat Peraturan Menteri ini berlaku, Peraturan Menteri Perhubungan Nomor PM 75 Tahun 2015 tentang Penyelenggaraan Analisis Dampak Lalu Lintas (Berita Negara Republik Indonesia Tahun 2015 Nomor 570), sebagaimana telah beberapa kali diubah terakhir dengan Peraturan Menteri Perhubungan Nomor PM 11 Tahun 2017 tentang Perubahan Ketiga atas Peraturan Menteri Perhubungan Nomor PM 75 Tahun 2015 tentang Penyelenggaraan Analisis Dampak Lalu Lintas (Berita Negara Republik Indonesia Tahun 2017 Nomor 297), dicabut dan dinyatakan tidak berlaku.
+
+Pasal 60
+Peraturan Menteri ini mulai berlaku pada tanggal diundangkan.
+
+Agar setiap orang mengetahuinya, memerintahkan pengundangan Peraturan Menteri ini dengan penempatannya dalam Berita Negara Republik Indonesia.
+
+Ditetapkan di Jakarta
+pada tanggal 18 Mei 2021
+MENTERI PERHUBUNGAN REPUBLIK INDONESIA,
+ttd
+BUDI KARYA SUMADI
+
+Diundangkan di Jakarta
+pada tanggal 19 Mei 2021
+DIREKTUR JENDERAL PERATURAN PERUNDANG-UNDANGAN
+KEMENTERIAN HUKUM DAN HAK ASASI MANUSIA REPUBLIK INDONESIA,
+ttd
+WIDODO EKATJAHJANA
+
+BERITA NEGARA REPUBLIK INDONESIA TAHUN 2021 NOMOR 528
+
+Salinan sesuai dengan aslinya
+Plt. KEPALA BIRO HUKUM,
+ttd
+YUSTINUS DANANG RUSDIHANTO
