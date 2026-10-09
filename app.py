@@ -7,7 +7,8 @@ from pathlib import Path
 
 import streamlit as st
 
-st.set_page_config(page_title="Cari Peraturan", page_icon="🔎", layout="centered")
+st.set_page_config(page_title="Cari Peraturan", page_icon="🔎", layout="centered",
+                   initial_sidebar_state="expanded")
 
 INDEKS = Path(__file__).parent / "data" / "index.json"
 WORD = re.compile(r"[A-Za-zÀ-ÿ0-9]+")
@@ -156,7 +157,10 @@ st.markdown("""<style>
 :root{--kertas:#f5f1e8;--kartu:#fffdf8;--tinta:#1f2430;--redup:#68707e;--garis:#e0d8c6;--aksen:#17445c;--aksen2:#0f2f41}
 html,body,[class*="css"],.stApp{font-family:'IBM Plex Sans',system-ui,sans-serif}
 .stApp{background:var(--kertas);color:var(--tinta)}
-#MainMenu,footer,header[data-testid="stHeader"]{visibility:hidden;height:0}
+#MainMenu,footer{visibility:hidden}
+header[data-testid="stHeader"]{background:transparent}
+section[data-testid="stSidebar"]{background:#ece6d6;border-right:1px solid var(--garis)}
+section[data-testid="stSidebar"] h2{font:700 20px/1.2 'Source Serif 4',Georgia,serif;color:var(--aksen2)}
 .block-container{max-width:860px;padding-top:1.2rem;padding-bottom:4rem}
 .hero{background:linear-gradient(135deg,var(--aksen2),var(--aksen));color:#f4efe2;border-radius:16px;padding:30px 30px 26px;margin-bottom:22px;position:relative;overflow:hidden}
 .hero:after{content:"§";position:absolute;right:18px;top:-36px;font:700 190px/1 'Source Serif 4',serif;color:rgba(255,255,255,.07)}
@@ -167,7 +171,7 @@ html,body,[class*="css"],.stApp{font-family:'IBM Plex Sans',system-ui,sans-serif
 .stats span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:99px;padding:4px 14px;font-size:13px}
 div[data-testid="stTextInput"] input{font-size:17px;padding:14px 16px;border-radius:12px;border:1.5px solid var(--garis);background:var(--kartu);color:var(--tinta)}
 div[data-testid="stTextInput"] input:focus{border-color:var(--aksen);box-shadow:0 0 0 3px rgba(23,68,92,.15)}
-div[data-testid="stTextInput"] label p,div[data-testid="stMultiSelect"] label p{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--redup);font-weight:600}
+div[data-testid="stTextInput"] label p{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--redup);font-weight:600}
 .stButton>button{border-radius:10px;border:1px solid var(--aksen);background:var(--aksen);color:#fff;font-weight:500;padding:.5rem 1.1rem}
 .stButton>button:hover{background:var(--aksen2);border-color:var(--aksen2);color:#fff}
 .ringkas{background:var(--kartu);border:1px solid var(--garis);border-left:5px solid var(--aksen);border-radius:12px;padding:16px 20px;margin:18px 0 8px}
@@ -201,8 +205,14 @@ st.markdown(
     unsafe_allow_html=True)
 
 q = st.text_input("Kata kunci", placeholder="mis. denda administratif, izin angkutan barang")
-pilih = st.multiselect("Dokumen", list(DOCS), default=list(DOCS),
-                       format_func=lambda i: f"{DOCS[i]['singkat']} — {DOCS[i]['judul']}")
+with st.sidebar:
+    st.markdown("## Dokumen")
+    st.caption("Pilih peraturan yang ingin dicari.")
+    pilih = [k for k, d in DOCS.items()
+             if st.checkbox(f"{d['singkat']} — {d['judul']}", value=True, key=f"doc_{k}")]
+    if not pilih:
+        st.warning("Pilih minimal satu dokumen.")
+    st.caption(f"{len(pilih)} dari {len(DOCS)} dokumen aktif")
 
 if q:
     ts, hits = cari(q, set(pilih))
