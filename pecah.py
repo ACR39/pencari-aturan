@@ -16,6 +16,7 @@ BAGIAN = re.compile(
     r'Kesembilan|Kesepuluh|Kesebelas|Kedua Belas|Ketiga Belas|Keempat Belas)\s*$')
 PARAGRAF = re.compile(r'^\s*Paragraf\s+(\d+)\s*$')
 MARKER = re.compile(r'^(\(\d+\)|\d+\)|[a-z]\)|[a-z]\.|\d+\.)\s')
+SAMBUNG = re.compile(r'(?i)(?<!/)\b(ayat|huruf|angka|pasal|dan|atau|serta|sampai dengan|dengan)\s*$|,$')
 LAMPIRAN = re.compile(r'^\s*LAMPIRAN\s+(I|II|III|IV|V)\s*$')
 
 
@@ -45,7 +46,7 @@ def reflow(lines):
         s = ln.strip()
         if not s:
             continue
-        if MARKER.match(s) and cur:
+        if MARKER.match(s) and cur and not SAMBUNG.search(cur[-1]):
             paras.append(' '.join(cur))
             cur = [s]
         else:
