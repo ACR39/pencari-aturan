@@ -219,8 +219,89 @@ div[data-testid="stTextInput"] label p{font-size:12px;letter-spacing:.08em;text-
 .kosong{text-align:center;color:var(--redup);padding:34px 0}
 .catfoot{font-size:12.5px;color:var(--redup);border-top:1px solid var(--garis);padding-top:14px;margin-top:28px}
 div[data-testid="stMultiSelect"] span[data-baseweb="tag"]{background:var(--aksen);color:#fff;border-radius:99px}
+button[data-baseweb="tab"] p{font-weight:600}
 @media(max-width:640px){.hero{padding:22px 18px}.hero h1{font-size:27px}.kartu{padding:15px 16px}}
 </style>""", unsafe_allow_html=True)
+
+
+def kartu_html(c, ts, penuh=False):
+    d = DOCS[c["doc"]]
+    warna = WARNA_DOC[c["doc"]]
+    jejak = " › ".join(html.escape(x) for x in filter(None, [c.get("bab"), c.get("bagian"), c.get("paragraf")]))
+    isi = c["text"] if penuh else potong(c["text"], ts, 700)
+    pen_t = c.get("penjelasan") or ""
+    pen = (f'<div class="pen"><b>Penjelasan:</b> {sorot(pen_t if penuh else potong(pen_t, ts, 400), ts)}</div>'
+           if pen_t else "")
+    cat = ('<div class="catatan">Teks ini hasil pindaian (OCR) dan mungkin ada salah ketik; cek ke dokumen asli.</div>'
+           if c.get("lowq") else "")
+    return (f'<div class="kartu" style="border-top:4px solid {warna}">'
+            f'<div class="atas"><span class="lencana" style="background:{warna}">{html.escape(d["singkat"])}</span>'
+            f'<span class="jejak" style="margin:0">{html.escape(d["jenis"])} {html.escape(d["nomor"])}/{html.escape(d["tahun"])}</span></div>'
+            f'<div class="nomor">{html.escape(c["label"])}</div><div class="jejak">{jejak}</div>'
+            f'<div class="isi">{sorot(isi, ts)}</div>{pen}{cat}</div>')
+
+
+def baca_dokumen():
+    """Pembaca dokumen: pilih dokumen, bagian (BAB), dan lompat ke pasal tertentu."""
+    pilihan = list(DOCS)
+    k = st.selectbox("Dokumen", pilihan, format_func=lambda i: f"{DOCS[i]['singkat']} — {DOCS[i]['judul']}",
+                     key="baca_doc")
+    d = DOCS[k]
+    potongan = [c for c in DATA["chunks"] if c["doc"] == k]
+    bab_urut = []
+    for c in potongan:
+        if c.get("bab") and c["bab"] not in bab_urut:
+            bab_urut.append(c["bab"])
+    jenis_ada = {c["type"] for c in potongan}
+    daftar = ["Semua bagian"]
+    if "pembukaan" in jenis_ada:
+        daftar.append("Konsiderans")
+    if "penjelasan_umum" in jenis_ada:
+        daftar.append("Penjelasan Umum")
+    daftar += bab_urut
+    if "lampiran" in jenis_ada:
+        daftar.append("Lampiran")
+    if "teks" in jenis_ada:
+        daftar.append("Teks")
+    c1, c2 = st.columns([3, 1])
+    bagian = c1.selectbox("Bagian", daftar, key=f"baca_bagian_{k}")
+    nomor_pasal = [c["pasal"] for c in potongan if c["type"] == "pasal"]
+    lompat = c2.number_input("Ke pasal", min_value=0, max_value=max(nomor_pasal or [0]), value=0, step=1,
+                             key=f"baca_lompat_{k}", help="0 = tidak melompat")
+
+    if bagian == "Semua bagian":
+        item = potongan
+    elif bagian == "Konsiderans":
+        item = [c for c in potongan if c["type"] == "pembukaan"]
+    elif bagian == "Penjelasan Umum":
+        item = [c for c in potongan if c["type"] == "penjelasan_umum"]
+    elif bagian == "Lampiran":
+        item = [c for c in potongan if c["type"] == "lampiran"]
+    elif bagian == "Teks":
+        item = [c for c in potongan if c["type"] == "teks"]
+    else:
+        item = [c for c in potongan if c.get("bab") == bagian]
+
+    per = 8
+    total = max(1, (len(item) + per - 1) // per)
+    mulai = 0
+    if lompat:
+        idx = next((i for i, c in enumerate(item) if c["type"] == "pasal" and c["pasal"] == lompat), None)
+        if idx is None:
+            st.info(f"Pasal {lompat} tidak ada pada bagian ini. Pilih 'Semua bagian' untuk mencarinya.")
+        else:
+            mulai = idx
+    else:
+        hal = st.number_input("Halaman", min_value=1, max_value=total, value=1, step=1,
+                              key=f"baca_hal_{k}_{bagian}") if total > 1 else 1
+        mulai = (hal - 1) * per
+    cap = f"{d['jenis']} {d['nomor']}/{d['tahun']} · {len(item)} bagian"
+    if not lompat:
+        cap += f" · halaman {mulai // per + 1} dari {total}"
+    st.caption(cap)
+    tombol_unduh(k, "baca", "⬇ Unduh PDF asli")
+    for c in item[mulai:mulai + per]:
+        st.markdown(kartu_html(c, [], penuh=True), unsafe_allow_html=True)
 
 st.markdown(
     f'<div class="hero"><p class="eyebrow">Basis pengetahuan hukum</p><h1>Cari Peraturan</h1>'
@@ -228,78 +309,94 @@ st.markdown(
     f'<div class="stats"><span>{len(DOCS)} peraturan</span><span>{N} potongan pasal</span></div></div>',
     unsafe_allow_html=True)
 
-q = st.text_input("Kata kunci", placeholder="mis. denda administratif, izin angkutan barang")
-with st.sidebar:
-    st.markdown("## Dokumen")
-    st.caption("Pilih peraturan yang ingin dicari.")
-    pilih = [k for k, d in DOCS.items()
-             if st.checkbox(f"{d['singkat']} — {d['judul']}", value=True, key=f"doc_{k}")]
-    if not pilih:
-        st.warning("Pilih minimal satu dokumen.")
-    st.caption(f"{len(pilih)} dari {len(DOCS)} dokumen aktif")
-    ada_pdf = [k for k, d in DOCS.items() if berkas_pdf(d)]
-    if ada_pdf:
-        with st.expander("⬇ Unduh PDF asli"):
-            pdf_pilih = st.selectbox("Dokumen", ada_pdf, format_func=lambda k: DOCS[k]["singkat"],
-                                     label_visibility="collapsed")
-            tombol_unduh(pdf_pilih, "sb", "Unduh PDF")
-    for d in DOCS.values():
-        if d.get("catatan"):
-            st.caption(f"ℹ️ {d['singkat']}: {d['catatan']}")
+tab_cari, tab_baca = st.tabs(["🔎 Cari kata kunci", "📖 Baca dokumen"])
+with tab_baca:
+    baca_dokumen()
+with tab_cari:
+    q = st.text_input("Kata kunci", placeholder="mis. denda administratif, izin angkutan barang")
+    with st.sidebar:
+        st.markdown("## Dokumen")
+        st.caption("Pilih peraturan yang ingin dicari.")
+        if "dipilih" not in st.session_state:
+            st.session_state["dipilih"] = set(DOCS)
 
-if q:
-    ts, hits = cari(q, set(pilih))
-    if not ts:
-        st.markdown('<div class="kosong">Ketik kata kunci yang lebih spesifik.</div>', unsafe_allow_html=True)
-    elif not hits:
-        st.markdown(f'<div class="kosong">Tidak ada hasil untuk “{html.escape(q)}”.<br>Coba kata dasar atau sinonim.</div>',
-                    unsafe_allow_html=True)
-    else:
-        per = {}
-        for c in hits:
-            per[c["doc"]] = per.get(c["doc"], 0) + 1
-        bar = "".join(f'<i style="width:{v / len(hits) * 100:.1f}%;background:{WARNA_DOC[k]}"></i>' for k, v in per.items())
-        leg = "".join(f'<span><b style="background:{WARNA_DOC[k]}"></b>{html.escape(DOCS[k]["singkat"])}: {v}</span>'
-                      for k, v in per.items())
-        top = ", ".join(html.escape(rujuk(c)) for c in hits[:3])
-        st.markdown(
-            f'<div class="ringkas"><div class="lbl">Ringkasan</div>'
-            f'<span class="angka">{len(hits)}</span>bagian cocok'
-            f'<div class="bar">{bar}</div><div class="legenda">{leg}</div>'
-            f'<p>Paling relevan: {top}.</p></div>', unsafe_allow_html=True)
-        unduh = [k for k in per if berkas_pdf(DOCS[k])]
-        for i in range(0, len(unduh), 3):
-            kol = st.columns(3)
-            for kk, k in zip(kol, unduh[i:i + 3]):
-                with kk:
-                    tombol_unduh(k, "hasil")
-        if all(k in st.secrets for k in ("API_BASE_URL", "API_KEY", "API_MODEL")):
-            if st.button("✨ Ringkas isinya dengan AI"):
-                with st.spinner("Meringkas…"):
-                    try:
-                        with st.container(border=True):
-                            st.markdown(ringkas_llm(q, ts, hits))
-                    except Exception as e:  # noqa: BLE001
-                        st.error(f"Ringkasan gagal: {e}. Jika \"timed out\", gateway/model terlalu lambat: coba model yang lebih cepat di API_MODEL atau naikkan API_TIMEOUT di Secrets.")
-        tampil = st.session_state.get("tampil", 10)
-        for c in hits[:tampil]:
-            d = DOCS[c["doc"]]
-            jejak = " › ".join(html.escape(x) for x in filter(None, [c.get("bab"), c.get("bagian"), c.get("paragraf")]))
-            pen = (f'<div class="pen"><b>Penjelasan:</b> {sorot(potong(c["penjelasan"], ts, 400), ts)}</div>'
-                   if c.get("penjelasan") else "")
-            cat = ('<div class="catatan">Teks ini hasil pindaian (OCR) dan mungkin ada salah ketik; cek ke dokumen asli.</div>'
-                   if c.get("lowq") else "")
+        def atur_semua(nilai: bool):
+            st.session_state["dipilih"] = set(DOCS) if nilai else set()
+            for k in DOCS:
+                st.session_state.pop(f"doc_{k}", None)
+
+        def ubah(k):
+            if st.session_state.get(f"doc_{k}"):
+                st.session_state["dipilih"].add(k)
+            else:
+                st.session_state["dipilih"].discard(k)
+
+        b1, b2 = st.columns(2)
+        b1.button("Pilih semua", on_click=atur_semua, args=(True,), use_container_width=True, key="pilih_semua")
+        b2.button("Hapus semua", on_click=atur_semua, args=(False,), use_container_width=True, key="hapus_semua")
+        saring = st.text_input("Saring daftar", placeholder="ketik nama/nomor", label_visibility="collapsed") \
+            if len(DOCS) > 6 else ""
+        for k, d in DOCS.items():
+            label = f"{d['singkat']} — {d['judul']}"
+            if saring and saring.lower() not in label.lower():
+                continue
+            st.checkbox(label, value=k in st.session_state["dipilih"], key=f"doc_{k}", on_change=ubah, args=(k,))
+        pilih = [k for k in DOCS if k in st.session_state["dipilih"]]
+        if not pilih:
+            st.warning("Pilih minimal satu dokumen.")
+        st.caption(f"{len(pilih)} dari {len(DOCS)} dokumen aktif")
+        ada_pdf = [k for k, d in DOCS.items() if berkas_pdf(d)]
+        if ada_pdf:
+            with st.expander("⬇ Unduh PDF asli"):
+                pdf_pilih = st.selectbox("Dokumen", ada_pdf, format_func=lambda k: DOCS[k]["singkat"],
+                                         label_visibility="collapsed")
+                tombol_unduh(pdf_pilih, "sb", "Unduh PDF")
+        for d in DOCS.values():
+            if d.get("catatan"):
+                st.caption(f"ℹ️ {d['singkat']}: {d['catatan']}")
+
+    if q:
+        ts, hits = cari(q, set(pilih))
+        if not ts:
+            st.markdown('<div class="kosong">Ketik kata kunci yang lebih spesifik.</div>', unsafe_allow_html=True)
+        elif not hits:
+            st.markdown(f'<div class="kosong">Tidak ada hasil untuk “{html.escape(q)}”.<br>Coba kata dasar atau sinonim.</div>',
+                        unsafe_allow_html=True)
+        else:
+            per = {}
+            for c in hits:
+                per[c["doc"]] = per.get(c["doc"], 0) + 1
+            bar = "".join(f'<i style="width:{v / len(hits) * 100:.1f}%;background:{WARNA_DOC[k]}"></i>' for k, v in per.items())
+            leg = "".join(f'<span><b style="background:{WARNA_DOC[k]}"></b>{html.escape(DOCS[k]["singkat"])}: {v}</span>'
+                          for k, v in per.items())
+            top = ", ".join(html.escape(rujuk(c)) for c in hits[:3])
             st.markdown(
-                f'<div class="kartu" style="border-top:4px solid {WARNA_DOC[c["doc"]]}">'
-                f'<div class="atas"><span class="lencana" style="background:{WARNA_DOC[c["doc"]]}">{html.escape(d["singkat"])}</span>'
-                f'<span class="jejak" style="margin:0">{html.escape(d["jenis"])} {html.escape(d["nomor"])}/{html.escape(d["tahun"])}</span></div>'
-                f'<div class="nomor">{html.escape(c["label"])}</div><div class="jejak">{jejak}</div>'
-                f'<div class="isi">{sorot(potong(c["text"], ts, 700), ts)}</div>{pen}{cat}</div>',
-                unsafe_allow_html=True)
-        if len(hits) > tampil:
-            if st.button(f"Tampilkan lebih banyak ({len(hits) - tampil})"):
-                st.session_state["tampil"] = tampil + 10
-                st.rerun()
+                f'<div class="ringkas"><div class="lbl">Ringkasan</div>'
+                f'<span class="angka">{len(hits)}</span>bagian cocok'
+                f'<div class="bar">{bar}</div><div class="legenda">{leg}</div>'
+                f'<p>Paling relevan: {top}.</p></div>', unsafe_allow_html=True)
+            unduh = [k for k in per if berkas_pdf(DOCS[k])]
+            for i in range(0, len(unduh), 3):
+                kol = st.columns(3)
+                for kk, k in zip(kol, unduh[i:i + 3]):
+                    with kk:
+                        tombol_unduh(k, "hasil")
+            if all(k in st.secrets for k in ("API_BASE_URL", "API_KEY", "API_MODEL")):
+                if st.button("✨ Ringkas isinya dengan AI"):
+                    with st.spinner("Meringkas…"):
+                        try:
+                            with st.container(border=True):
+                                st.markdown(ringkas_llm(q, ts, hits))
+                        except Exception as e:  # noqa: BLE001
+                            st.error(f"Ringkasan gagal: {e}. Jika \"timed out\", gateway/model terlalu lambat: coba model yang lebih cepat di API_MODEL atau naikkan API_TIMEOUT di Secrets.")
+            tampil = st.session_state.get("tampil", 10)
+            for c in hits[:tampil]:
+                st.markdown(kartu_html(c, ts), unsafe_allow_html=True)
+            if len(hits) > tampil:
+                if st.button(f"Tampilkan lebih banyak ({len(hits) - tampil})"):
+                    st.session_state["tampil"] = tampil + 10
+                    st.rerun()
+
 
 st.markdown(
     '<div class="catfoot">Status berlaku/diubah/dicabut belum diverifikasi: '
