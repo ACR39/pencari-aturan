@@ -166,6 +166,19 @@ def sisip_pasal_1(badan):
     return badan
 
 
+def rapikan_pembukaan(pembukaan):
+    """Buang sampul/abstrak situs (sebelum judul peraturan) dan pisahkan butir Menimbang/Mengingat."""
+    for i, l in enumerate(pembukaan):
+        if i > 0 and re.match(r"^\s*(PERATURAN|UNDANG[- ]?UNDANG|KEPUTUSAN)\b", l):
+            pembukaan = pembukaan[i:]
+            break
+    t = P.reflow(pembukaan)
+    t = re.sub(r"\s+(Menimbang|Mengingat|Memutuskan|MEMUTUSKAN|Menetapkan)\s*[:+]", r"\n\1:", t)
+    t = re.sub(r"(?<=[\w;,.])\s+([a-z])\.\s+(?=bahwa\b)", r"\n\1. ", t)
+    t = re.sub(r"(?<=[;,.])\s+(\d{1,2})\.\s+(?=(Pasal|Undang|Peraturan|Keputusan|Ketetapan)\b)", r"\n\1. ", t)
+    return t.strip()
+
+
 def pecah(lines, doc_id, ocr: bool):
     """Kembalikan (chunks, info). info berisi jumlah pasal, nomor hilang, dsb."""
     info = {"pasal": 0, "hilang": [], "lampiran": 0, "penjelasan": False, "mode": "pasal"}
@@ -213,7 +226,7 @@ def pecah(lines, doc_id, ocr: bool):
             info["penjelasan"] = True
 
     chunks.append({"doc": doc_id, "type": "pembukaan", "label": "Konsiderans (Menimbang, Mengingat)",
-                   "text": P.reflow(pembukaan), "bab": None, "bagian": None, "paragraf": None})
+                   "text": rapikan_pembukaan(pembukaan), "bab": None, "bagian": None, "paragraf": None})
     if umum:
         chunks.append({"doc": doc_id, "type": "penjelasan_umum", "label": "Penjelasan Umum", "text": umum,
                        "bab": None, "bagian": None, "paragraf": None})
