@@ -7,11 +7,11 @@ import json
 import re
 import sys
 
-PAGE_NO = re.compile(r'^\s*-\s*\d+\s*-?\s*$')
+PAGE_NO = re.compile(r'^\s*[-–—_~]\s*\d+\s*[-–—_~]?\s*$')
 CATCHWORD = re.compile(r'\.\s\.\s\.\s*$')
 # kepala/kaki halaman dari situs peraturan (www.peraturan.go.id, "2021, No.1569 10", dst.)
 SITUS = re.compile(r'(?i)^\s*(www\.)?(peraturan\.go\.id|peraturan\.bpk\.go\.id|jdih\.[\w.]+)\s*$')
-BN_HAL = re.compile(r'^\s*(\d{1,3}\s+)?\d{4}\s*,\s*No\.?\s*\d+(\s+\d{1,3})?\s*$')
+BN_HAL = re.compile(r'^\s*(\d{1,3}\s+)?\d{4}\s*,\s*No[.,]?\s*\d+(\s+\d{1,3})?\s*[.,;:|]*\s*$')
 PASAL = re.compile(r'^\s*Pasal\s*(\d+)\s*$')
 BAB = re.compile(r'^\s*BAB\s*([IVXLC]+)\s*$')
 BAGIAN = re.compile(
