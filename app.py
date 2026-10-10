@@ -220,8 +220,46 @@ div[data-testid="stTextInput"] label p{font-size:12px;letter-spacing:.08em;text-
 .catfoot{font-size:12.5px;color:var(--redup);border-top:1px solid var(--garis);padding-top:14px;margin-top:28px}
 div[data-testid="stMultiSelect"] span[data-baseweb="tag"]{background:var(--aksen);color:#fff;border-radius:99px}
 button[data-baseweb="tab"] p{font-weight:600}
+.butir{display:flex;gap:.55em;margin:.18em 0 .18em calc(var(--lv,0) * 1.7em)}
+.butir .mk{flex:0 0 auto;min-width:1.9em;text-align:right;color:var(--redup)}
+.butir .tx{flex:1 1 auto;min-width:0}
+.butir.tanpa .tx{margin-left:0}
+.kartu .pen .butir .mk{min-width:1.5em}
 @media(max-width:640px){.hero{padding:22px 18px}.hero h1{font-size:27px}.kartu{padding:15px 16px}}
 </style>""", unsafe_allow_html=True)
+
+
+MARKER = re.compile(r"^(\(\d+\)|\d+\)|[a-z]\)|[a-z]\.|\d+\.)\s+(.*)$", re.S)
+
+
+def jenis_marker(m: str) -> str:
+    if m.startswith("("):
+        return "A"          # (1)
+    if m.endswith(")"):
+        return "P"          # 1) atau a)
+    return "L" if m[0].isalpha() else "N"   # a.  /  1.
+
+
+def isi_html(teks: str, ts) -> str:
+    """Ubah teks pasal menjadi butir bertingkat dengan lekukan menggantung."""
+    tumpukan, keluar = [], []
+    for baris in teks.split("\n"):
+        if not baris.strip():
+            continue
+        m = MARKER.match(baris.strip())
+        if m:
+            k = jenis_marker(m.group(1))
+            if k in tumpukan:
+                del tumpukan[tumpukan.index(k) + 1:]
+            else:
+                tumpukan.append(k)
+            lv = tumpukan.index(k)
+            keluar.append(f'<div class="butir" style="--lv:{lv}"><span class="mk">{html.escape(m.group(1))}</span>'
+                          f'<span class="tx">{sorot(m.group(2), ts)}</span></div>')
+        else:
+            lv = max(len(tumpukan) - 1, 0)
+            keluar.append(f'<div class="butir tanpa" style="--lv:{lv}"><span class="tx">{sorot(baris.strip(), ts)}</span></div>')
+    return "".join(keluar)
 
 
 def kartu_html(c, ts, penuh=False):
@@ -230,7 +268,7 @@ def kartu_html(c, ts, penuh=False):
     jejak = " › ".join(html.escape(x) for x in filter(None, [c.get("bab"), c.get("bagian"), c.get("paragraf")]))
     isi = c["text"] if penuh else potong(c["text"], ts, 700)
     pen_t = c.get("penjelasan") or ""
-    pen = (f'<div class="pen"><b>Penjelasan:</b> {sorot(pen_t if penuh else potong(pen_t, ts, 400), ts)}</div>'
+    pen = (f'<div class="pen"><b>Penjelasan:</b> {isi_html(pen_t if penuh else potong(pen_t, ts, 400), ts)}</div>'
            if pen_t else "")
     cat = ('<div class="catatan">Teks ini hasil pindaian (OCR) dan mungkin ada salah ketik; cek ke dokumen asli.</div>'
            if c.get("lowq") else "")
@@ -238,7 +276,7 @@ def kartu_html(c, ts, penuh=False):
             f'<div class="atas"><span class="lencana" style="background:{warna}">{html.escape(d["singkat"])}</span>'
             f'<span class="jejak" style="margin:0">{html.escape(d["jenis"])} {html.escape(d["nomor"])}/{html.escape(d["tahun"])}</span></div>'
             f'<div class="nomor">{html.escape(c["label"])}</div><div class="jejak">{jejak}</div>'
-            f'<div class="isi">{sorot(isi, ts)}</div>{pen}{cat}</div>')
+            f'<div class="isi">{isi_html(isi, ts)}</div>{pen}{cat}</div>')
 
 
 def baca_dokumen():
