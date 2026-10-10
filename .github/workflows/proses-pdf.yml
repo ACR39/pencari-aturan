@@ -50,5 +50,6 @@ jobs:
             echo "Tidak ada perubahan indeks."
           else
             git commit -m "Perbarui indeks pencarian dari PDF"
+            git pull --rebase origin main
             git push
           fi
