@@ -94,6 +94,7 @@ def teks_ocr(pdf: Path):
 
 
 def ocr_fix(t: str) -> str:
+    t = re.sub(r"[ \t]*\|[ \t]*", " ", t)
     t = re.sub(r"\bdanl\s*atau\b", "dan/atau", t)
     t = re.sub(r"(?<=\w)\s+,", ",", t)
     t = re.sub(r"(?<=[a-z])ch\b", "eh", t)
