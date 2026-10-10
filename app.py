@@ -213,6 +213,8 @@ div[data-testid="stTextInput"] label p{font-size:12px;letter-spacing:.08em;text-
 .kartu .jejak{font-size:12.5px;color:var(--redup);line-height:1.45;margin-bottom:10px}
 .kartu .isi{font:400 16px/1.7 'Source Serif 4',Georgia,serif;overflow-wrap:anywhere}
 .kartu .pen{margin-top:12px;padding:10px 14px;background:#f1ece0;border-radius:8px;font-size:13.5px;line-height:1.55;color:#4a5160;overflow-wrap:anywhere}
+.kartu .pen summary{cursor:pointer;font-weight:600;color:var(--aksen);margin-bottom:6px}
+.kartu .pen .tag{color:var(--aksen);font-weight:600}
 .kartu .pen b{color:var(--aksen)}
 .kartu .catatan{margin-top:8px;font-size:12px;color:var(--redup)}
 .kartu mark{background:#ffe08a;color:#3a2b00;padding:0 2px;border-radius:3px}
@@ -258,18 +260,29 @@ def isi_html(teks: str, ts) -> str:
                           f'<span class="tx">{sorot(m.group(2), ts)}</span></div>')
         else:
             lv = max(len(tumpukan) - 1, 0)
-            keluar.append(f'<div class="butir tanpa" style="--lv:{lv}"><span class="tx">{sorot(baris.strip(), ts)}</span></div>')
+            b = baris.strip()
+            tag = re.match(r"^\[((?:Ayat|Huruf|Angka)[^\]]*)\]\s*(.*)$", b)
+            if tag:
+                keluar.append(f'<div class="butir tanpa" style="--lv:0"><span class="tx"><b class="tag">{html.escape(tag.group(1))}</b> '
+                              f'{sorot(tag.group(2), ts)}</span></div>')
+            else:
+                keluar.append(f'<div class="butir tanpa" style="--lv:{lv}"><span class="tx">{sorot(b, ts)}</span></div>')
     return "".join(keluar)
 
 
-def kartu_html(c, ts, penuh=False):
+def kartu_html(c, ts, penuh=False, buka_pen=False):
     d = DOCS[c["doc"]]
     warna = WARNA_DOC[c["doc"]]
     jejak = " › ".join(html.escape(x) for x in filter(None, [c.get("bab"), c.get("bagian"), c.get("paragraf")]))
     isi = c["text"] if penuh else potong(c["text"], ts, 700)
     pen_t = c.get("penjelasan") or ""
-    pen = (f'<div class="pen"><b>Penjelasan:</b> {isi_html(pen_t if penuh else potong(pen_t, ts, 400), ts)}</div>'
-           if pen_t else "")
+    pen = ""
+    if pen_t:
+        pen_t = re.sub(r"\s*(\[(?:Ayat|Huruf|Angka)[^\]]*\])", lambda m: "\n" + m.group(1), pen_t).strip()
+        cocok = bool(set(ts) & {stem(w) for w in WORD.findall(pen_t)})
+        buka = " open" if (buka_pen or cocok) else ""
+        pen = (f'<details class="pen"{buka}><summary>Penjelasan</summary>'
+               f'{isi_html(pen_t if penuh else potong(pen_t, ts, 400), ts)}</details>')
     cat = ('<div class="catatan">Teks ini hasil pindaian (OCR) dan mungkin ada salah ketik; cek ke dokumen asli.</div>'
            if c.get("lowq") else "")
     return (f'<div class="kartu" style="border-top:4px solid {warna}">'
@@ -303,6 +316,8 @@ def baca_dokumen():
         daftar.append("Teks")
     c1, c2 = st.columns([3, 1])
     bagian = c1.selectbox("Bagian", daftar, key=f"baca_bagian_{k}")
+    ada_pen = any(c.get("penjelasan") for c in potongan)
+    buka_pen = st.checkbox("Buka semua penjelasan", value=False, key=f"baca_pen_{k}") if ada_pen else False
     nomor_pasal = [c["pasal"] for c in potongan if c["type"] == "pasal"]
     lompat = c2.number_input("Ke pasal", min_value=0, max_value=max(nomor_pasal or [0]), value=0, step=1,
                              key=f"baca_lompat_{k}", help="0 = tidak melompat")
@@ -339,7 +354,7 @@ def baca_dokumen():
     st.caption(cap)
     tombol_unduh(k, "baca", "⬇ Unduh PDF asli")
     for c in item[mulai:mulai + per]:
-        st.markdown(kartu_html(c, [], penuh=True), unsafe_allow_html=True)
+        st.markdown(kartu_html(c, [], penuh=True, buka_pen=buka_pen), unsafe_allow_html=True)
 
 st.markdown(
     f'<div class="hero"><p class="eyebrow">Basis pengetahuan hukum</p><h1>Cari Peraturan</h1>'
@@ -360,8 +375,8 @@ with tab_cari:
 
         def atur_semua(nilai: bool):
             st.session_state["dipilih"] = set(DOCS) if nilai else set()
-            for k in DOCS:
-                st.session_state.pop(f"doc_{k}", None)
+            for kk in DOCS:
+                st.session_state[f"doc_{kk}"] = nilai
 
         def ubah(k):
             if st.session_state.get(f"doc_{k}"):
@@ -372,13 +387,16 @@ with tab_cari:
         b1, b2 = st.columns(2)
         b1.button("Pilih semua", on_click=atur_semua, args=(True,), use_container_width=True, key="pilih_semua")
         b2.button("Hapus semua", on_click=atur_semua, args=(False,), use_container_width=True, key="hapus_semua")
-        saring = st.text_input("Saring daftar", placeholder="ketik nama/nomor", label_visibility="collapsed") \
-            if len(DOCS) > 6 else ""
+        saring = (st.text_input("Saring daftar", placeholder="ketik nama/nomor", label_visibility="collapsed")
+                  if len(DOCS) > 6 else "")
         for k, d in DOCS.items():
             label = f"{d['singkat']} — {d['judul']}"
             if saring and saring.lower() not in label.lower():
                 continue
-            st.checkbox(label, value=k in st.session_state["dipilih"], key=f"doc_{k}", on_change=ubah, args=(k,))
+            kunci = f"doc_{k}"
+            if kunci not in st.session_state:
+                st.session_state[kunci] = k in st.session_state["dipilih"]
+            st.checkbox(label, key=kunci, on_change=ubah, args=(k,))
         pilih = [k for k in DOCS if k in st.session_state["dipilih"]]
         if not pilih:
             st.warning("Pilih minimal satu dokumen.")
