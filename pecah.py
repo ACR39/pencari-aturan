@@ -9,8 +9,8 @@ import sys
 
 PAGE_NO = re.compile(r'^\s*-\s*\d+\s*-?\s*$')
 CATCHWORD = re.compile(r'\.\s\.\s\.\s*$')
-PASAL = re.compile(r'^\s*Pasal\s+(\d+)\s*$')
-BAB = re.compile(r'^\s*BAB\s+([IVXLC]+)\s*$')
+PASAL = re.compile(r'^\s*Pasal\s*(\d+)\s*$')
+BAB = re.compile(r'^\s*BAB\s*([IVXLC]+)\s*$')
 BAGIAN = re.compile(
     r'^\s*Bagian\s+(Kesatu|Kedua|Ketiga|Keempat|Kelima|Keenam|Ketujuh|Kedelapan|'
     r'Kesembilan|Kesepuluh|Kesebelas|Kedua Belas|Ketiga Belas|Keempat Belas)\s*$')
@@ -80,7 +80,7 @@ def bab_judul(lines, i):
     return ' '.join(bagian), j
 
 
-def parse_badan(lines, doc_id):
+def parse_badan(lines, doc_id, gap=1):
     """Kembalikan (pembukaan_lines, daftar pasal)."""
     pembukaan, chunks = [], []
     bab = bagian = paragraf = None
@@ -114,8 +114,8 @@ def parse_badan(lines, doc_id):
             i = j
             continue
         m = PASAL.match(s)
-        if m and int(m.group(1)) == last + 1:
-            last += 1
+        if m and last < int(m.group(1)) <= last + gap:
+            last = int(m.group(1))
             cur = {'doc': doc_id, 'type': 'pasal', 'pasal': last, 'bab': bab,
                    'bagian': bagian, 'paragraf': paragraf, 'lines': []}
             chunks.append(cur)

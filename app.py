@@ -11,6 +11,7 @@ st.set_page_config(page_title="Cari Peraturan", page_icon="🔎", layout="center
                    initial_sidebar_state="expanded")
 
 INDEKS = Path(__file__).parent / "data" / "index.json"
+PDF_DIR = Path(__file__).parent / "pdf"
 WORD = re.compile(r"[A-Za-zÀ-ÿ0-9]+")
 STOP = set("yang dan di ke dari untuk dengan pada atau adalah itu ini dalam oleh bagi atas serta sebagai juga tidak dapat harus wajib".split())
 SUFFIX = ("kan", "an", "i", "nya", "lah", "kah")
@@ -62,6 +63,29 @@ def muat():
 
 DATA, DF = muat()
 DOCS = {d["id"]: d for d in DATA["docs"]}
+
+
+def berkas_pdf(doc):
+    """Path PDF asli untuk satu dokumen, atau None bila tidak ada di folder pdf/."""
+    calon = [doc.get("berkas"), doc.get("pdf"), doc["id"] + ".pdf",
+             doc["singkat"].replace("/", "-") + ".pdf", doc["singkat"].replace("/", " ") + ".pdf"]
+    for nama in calon:
+        if nama and (PDF_DIR / nama).is_file():
+            return PDF_DIR / nama
+    return None
+
+
+@st.cache_data(show_spinner=False)
+def baca_pdf(path: str) -> bytes:
+    return Path(path).read_bytes()
+
+
+def tombol_unduh(doc_id, kunci, label=None):
+    p = berkas_pdf(DOCS[doc_id])
+    if p:
+        st.download_button(label or f"⬇ PDF asli · {DOCS[doc_id]['singkat']}", data=baca_pdf(str(p)),
+                           file_name=p.name, mime="application/pdf", key=f"{kunci}_{doc_id}",
+                           use_container_width=True)
 N = len(DATA["chunks"])
 
 
@@ -213,6 +237,15 @@ with st.sidebar:
     if not pilih:
         st.warning("Pilih minimal satu dokumen.")
     st.caption(f"{len(pilih)} dari {len(DOCS)} dokumen aktif")
+    ada_pdf = [k for k, d in DOCS.items() if berkas_pdf(d)]
+    if ada_pdf:
+        with st.expander("⬇ Unduh PDF asli"):
+            pdf_pilih = st.selectbox("Dokumen", ada_pdf, format_func=lambda k: DOCS[k]["singkat"],
+                                     label_visibility="collapsed")
+            tombol_unduh(pdf_pilih, "sb", "Unduh PDF")
+    for d in DOCS.values():
+        if d.get("catatan"):
+            st.caption(f"ℹ️ {d['singkat']}: {d['catatan']}")
 
 if q:
     ts, hits = cari(q, set(pilih))
@@ -234,6 +267,12 @@ if q:
             f'<span class="angka">{len(hits)}</span>bagian cocok'
             f'<div class="bar">{bar}</div><div class="legenda">{leg}</div>'
             f'<p>Paling relevan: {top}.</p></div>', unsafe_allow_html=True)
+        unduh = [k for k in per if berkas_pdf(DOCS[k])]
+        for i in range(0, len(unduh), 3):
+            kol = st.columns(3)
+            for kk, k in zip(kol, unduh[i:i + 3]):
+                with kk:
+                    tombol_unduh(k, "hasil")
         if all(k in st.secrets for k in ("API_BASE_URL", "API_KEY", "API_MODEL")):
             if st.button("✨ Ringkas isinya dengan AI"):
                 with st.spinner("Meringkas…"):
@@ -248,7 +287,7 @@ if q:
             jejak = " › ".join(html.escape(x) for x in filter(None, [c.get("bab"), c.get("bagian"), c.get("paragraf")]))
             pen = (f'<div class="pen"><b>Penjelasan:</b> {sorot(potong(c["penjelasan"], ts, 400), ts)}</div>'
                    if c.get("penjelasan") else "")
-            cat = ('<div class="catatan">Teks lampiran ini hasil pindaian kurang rapi; cek ke dokumen asli.</div>'
+            cat = ('<div class="catatan">Teks ini hasil pindaian (OCR) dan mungkin ada salah ketik; cek ke dokumen asli.</div>'
                    if c.get("lowq") else "")
             st.markdown(
                 f'<div class="kartu" style="border-top:4px solid {WARNA_DOC[c["doc"]]}">'
