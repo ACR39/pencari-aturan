@@ -101,6 +101,9 @@ def ocr_fix(t: str) -> str:
     t = re.sub(r"\bsc(?=[bdghklmnprstw])", "se", t)
     t = re.sub(r"(?<=[a-z])ct(?=[a-z])", "et", t)
     t = re.sub(r"([;:]) ([a-e])[,] ", r"\1\n\2. ", t)
+    t = re.sub(r"[ \t]*_[ \t]+", " ", t)                       # garis bawah sisa spasi rata
+    t = re.sub(r"(?<=[a-z])[’‘](?=\s)", "", t)                  # petik nyasar
+    t = re.sub(r"; dan ([a-e])\. ", r"; dan\n\1. ", t)           # butir terakhir yang menyatu
     return t
 
 
