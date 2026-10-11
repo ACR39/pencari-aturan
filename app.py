@@ -173,7 +173,7 @@ def ringkas_llm(q, ts, hits):
     return j["content"][0]["text"] if fmt == "anthropic" else j["choices"][0]["message"]["content"]
 
 
-WARNA = ["#1d6b5c", "#a4511f", "#3b5a9d", "#7a3b7a", "#8a6d1a"]
+WARNA = ["#0b8a82", "#e12885", "#3b6fd1", "#7a4fc2", "#d08a00"]
 WARNA_DOC = {k: WARNA[i % len(WARNA)] for i, k in enumerate(DOCS)}
 
 st.markdown("""<style>
@@ -229,6 +229,51 @@ button[data-baseweb="tab"] p{font-weight:600}
 .kartu .pen .butir .mk{min-width:1.5em}
 @media(max-width:640px){.hero{padding:22px 18px}.hero h1{font-size:27px}.kartu{padding:15px 16px}}
 </style>""", unsafe_allow_html=True)
+
+
+# ================= TEMA TURKUOIS + MERAH MUDA =================
+ASET = Path(__file__).parent / "assets"
+
+
+@st.cache_resource(show_spinner=False)
+def gambar_b64(nama: str) -> str:
+    import base64
+    try:
+        return base64.b64encode((ASET / nama).read_bytes()).decode()
+    except OSError:
+        return ""
+
+
+st.markdown("""<style>
+:root{--kertas:#eefafa;--kartu:#ffffff;--tinta:#17323a;--redup:#527a80;--garis:#b9e3de;--aksen:#0b8a82;--aksen2:#086a64;--pink:#e12885;--pinkink:#b0176b}
+.stApp{background:radial-gradient(circle at 92% -5%,rgba(57,197,187,.28),transparent 42%),radial-gradient(circle at -5% 105%,rgba(225,40,133,.10),transparent 38%),var(--kertas);background-attachment:fixed}
+section[data-testid="stSidebar"]{background:linear-gradient(180deg,#dcf4f1,#c9efea);border-right:1px solid var(--garis)}
+section[data-testid="stSidebar"] h2{color:var(--aksen2)}
+.hero{background:linear-gradient(135deg,#086a64,#0b8a82 55%,#17a89e);border-top:4px solid #39c5bb;box-shadow:0 8px 26px -10px rgba(11,138,130,.45)}
+.hero:after{color:rgba(255,255,255,.09)}
+.hero .stats span{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.28)}
+.eq{display:flex;gap:3px;align-items:flex-end;height:26px;margin:18px 0 -6px;overflow:hidden}
+.eq i{flex:1 1 0;min-width:2px;height:100%;background:linear-gradient(#ff7ab8,#7ff0e6);border-radius:2px;transform-origin:bottom;transform:scaleY(var(--hi));animation:eq 1.4s ease-in-out infinite;animation-delay:var(--d)}
+@keyframes eq{0%,100%{transform:scaleY(var(--lo))}50%{transform:scaleY(var(--hi))}}
+@media (prefers-reduced-motion:reduce){.eq i{animation:none}}
+div[data-testid="stTextInput"] input:focus{border-color:var(--aksen);box-shadow:0 0 0 3px rgba(11,138,130,.18)}
+.stButton>button{background:linear-gradient(135deg,#0b8a82,#17a89e);border-color:transparent}
+.stButton>button:hover{background:linear-gradient(135deg,#086a64,#0b8a82);color:#fff}
+button[data-baseweb="tab"][aria-selected="true"] p{color:var(--pinkink)}
+div[data-baseweb="tab-highlight"]{background:var(--pink)!important}
+div[data-testid="stMultiSelect"] span[data-baseweb="tag"]{background:var(--aksen)}
+.ringkas{border-left-color:var(--pink)}
+.ringkas .lbl,.ringkas .angka{color:var(--pinkink)}
+.kartu{box-shadow:0 1px 0 rgba(0,0,0,.02),0 8px 22px -14px rgba(11,138,130,.4)}
+.kartu .pen{background:#e9f8f6;color:#2f5a60}
+.kartu .pen summary,.kartu .pen .tag,.kartu .pen b{color:var(--aksen2)}
+.kartu mark{background:#ffd3e8;color:#5a0c35}
+.catfoot{color:var(--aksen)}
+.catfoot:before{content:"\\266A  "}
+img.maskot{width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:14px;border:1px solid var(--garis);box-shadow:0 4px 16px rgba(11,138,130,.18);margin-top:14px;pointer-events:none}
+@media (max-width:820px){img.maskot{display:none}}
+</style>""", unsafe_allow_html=True)
+
 
 
 MARKER = re.compile(r"^(\(\d+\)|\d+\)|[a-z]\)|[a-z]\.|\d+\.)\s+(.*)$", re.S)
@@ -356,10 +401,19 @@ def baca_dokumen():
     for c in item[mulai:mulai + per]:
         st.markdown(kartu_html(c, [], penuh=True, buka_pen=buka_pen), unsafe_allow_html=True)
 
+def equalizer(n=56):
+    out = []
+    for i in range(n):
+        r = abs(math.sin(i * 12.9898) * 43758.5453) % 1
+        r2 = abs(math.sin(i * 78.233) * 12345.678) % 1
+        out.append(f'<i style="--lo:{.15 + r * .15:.2f};--hi:{.55 + r2 * .45:.2f};--d:-{i * .11:.2f}s"></i>')
+    return '<div class="eq" aria-hidden="true">' + "".join(out) + "</div>"
+
+
 st.markdown(
     f'<div class="hero"><p class="eyebrow">Basis pengetahuan hukum</p><h1>Cari Peraturan</h1>'
     f'<p>Telusuri kata kunci langsung ke pasal yang tepat, lengkap dengan penjelasan dan ringkasan.</p>'
-    f'<div class="stats"><span>{len(DOCS)} peraturan</span><span>{N} potongan pasal</span></div></div>',
+    f'<div class="stats"><span>{len(DOCS)} peraturan</span><span>{N} potongan pasal</span></div>{equalizer()}</div>',
     unsafe_allow_html=True)
 
 tab_cari, tab_baca = st.tabs(["🔎 Cari kata kunci", "📖 Baca dokumen"])
@@ -410,6 +464,10 @@ with tab_cari:
         for d in DOCS.values():
             if d.get("catatan"):
                 st.caption(f"ℹ️ {d['singkat']}: {d['catatan']}")
+        st.toggle("Gambar sebagai latar", key="latar", help="Matikan untuk menampilkan gambar kecil di panel ini.")
+        if not st.session_state.get("latar") and gambar_b64("mascot.jpg"):
+            st.markdown(f'<img class="maskot" alt="" src="data:image/jpeg;base64,{gambar_b64("mascot.jpg")}">',
+                        unsafe_allow_html=True)
 
     if q:
         ts, hits = cari(q, set(pilih))
@@ -458,3 +516,10 @@ st.markdown(
     '<div class="catfoot">Status berlaku/diubah/dicabut belum diverifikasi: '
     + ", ".join(html.escape(d["singkat"]) for d in DOCS.values())
     + ". Periksa perubahan terbaru sebelum dijadikan rujukan.</div>", unsafe_allow_html=True)
+
+if st.session_state.get("latar") and gambar_b64("latar.jpg"):
+    st.markdown(
+        '<style>.stApp{background:linear-gradient(rgba(238,250,250,.38),rgba(238,250,250,.38)),'
+        f'url("data:image/jpeg;base64,{gambar_b64("latar.jpg")}") 8% 8%/cover no-repeat fixed}}'
+        'section[data-testid="stSidebar"]{background:rgba(220,244,241,.62);backdrop-filter:blur(2px)}'
+        '.kartu,.ringkas{background:rgba(255,255,255,.88)}</style>', unsafe_allow_html=True)
