@@ -12,6 +12,9 @@ CATCHWORD = re.compile(r'\.\s\.\s\.\s*$')
 # kepala/kaki halaman dari situs peraturan (www.peraturan.go.id, "2021, No.1569 10", dst.)
 SITUS = re.compile(r'(?i)^\s*(www\.)?(peraturan\.go\.id|peraturan\.bpk\.go\.id|jdih\.[\w.]+)\s*$')
 BN_HAL = re.compile(r'^\s*(\d{1,3}\s+)?\d{4}\s*,\s*No[.,]?\s*\d+(\s+\d{1,3})?\s*[.,;:|]*\s*$')
+# kepala halaman yang terbaca OCR dengan sisipan sampah: "13. 2021, No.1569", "2021, No.1569 -10-", "“14."
+BN_KOTOR = re.compile(r'\d{4}\s*,\s*No[.,]?\s*\d{3,4}')
+BN_EKOR = re.compile(r'\s*((?<!\w)[“”‘’\'\"]*[\dos]{1,3}[.,]?\s+)?\d{4}\s*,\s*No[.,]?\s*\d{3,4}\s*[^\w\s]{0,2}\s*\w{0,3}[^\w\s]{0,2}\s*$')
 PASAL = re.compile(r'^\s*Pasal\s*(\d+)\s*$')
 BAB = re.compile(r'^\s*BAB\s*([IVXLC]+)\s*$')
 BAGIAN = re.compile(
@@ -31,6 +34,9 @@ def bersih(lines):
             continue
         if CATCHWORD.search(s) or SITUS.match(s) or BN_HAL.match(s):
             continue
+        if len(s) <= 32 and BN_KOTOR.search(s):
+            continue
+        s = BN_EKOR.sub('', s) if BN_KOTOR.search(s) else s
         out.append(s)
     return out
 
