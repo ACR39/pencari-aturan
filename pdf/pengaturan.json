@@ -7,5 +7,14 @@
     "judul": "Evaluasi Akuntabilitas Kinerja Instansi Pemerintah",
     "singkat": "Permen PANRB 88/2021",
     "ocr": true
+  },
+  "PM 85 Tahun 2018.pdf": {
+    "id": "pm-85-2018",
+    "jenis": "Peraturan Menteri Perhubungan",
+    "nomor": "PM 85",
+    "tahun": "2018",
+    "judul": "Sistem Manajemen Keselamatan Perusahaan Angkutan Umum",
+    "singkat": "PM 85/2018",
+    "ocr": false
   }
 }
