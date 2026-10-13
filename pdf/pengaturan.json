@@ -16,5 +16,14 @@
     "judul": "Sistem Manajemen Keselamatan Perusahaan Angkutan Umum",
     "singkat": "PM 85/2018",
     "ocr": false
+  },
+  "PM 25 Tahun 2021.pdf": {
+    "id": "pm-25-2021",
+    "jenis": "Peraturan Menteri Perhubungan",
+    "nomor": "PM 25",
+    "tahun": "2021",
+    "judul": "Penyelenggaraan Bidang Angkutan Jalan",
+    "singkat": "PM 25/2021",
+    "ocr": false
   }
 }
