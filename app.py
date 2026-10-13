@@ -63,6 +63,26 @@ def muat():
 
 DATA, DF = muat()
 DOCS = {d["id"]: d for d in DATA["docs"]}
+st.session_state.setdefault("latar", True)   # gambar latar menyala secara bawaan
+
+# Status tiap peraturan dibaca dari data/status.json (satu tempat untuk semua dokumen).
+STATUS_BERKAS = Path(__file__).parent / "data" / "status.json"
+try:
+    for _id, _v in json.loads(STATUS_BERKAS.read_text(encoding="utf-8")).items():
+        if _id in DOCS and isinstance(_v, dict):
+            DOCS[_id]["status"] = _v.get("status") or DOCS[_id].get("status", "Belum diverifikasi")
+            DOCS[_id]["status_ket"] = _v.get("keterangan", "")
+except (OSError, ValueError):
+    pass
+KELAS_STATUS = {"berlaku": "ok", "diubah": "ubah", "dicabut": "cabut"}
+
+
+def lencana_status(d) -> str:
+    st_ = d.get("status") or "Belum diverifikasi"
+    kelas = KELAS_STATUS.get(st_.split()[0].lower(), "belum")
+    tip = html.escape(d.get("status_ket") or "")
+    return f'<span class="stat {kelas}" title="{tip}">{html.escape(st_)}</span>'
+
 
 
 def berkas_pdf(doc):
@@ -270,6 +290,11 @@ div[data-testid="stMultiSelect"] span[data-baseweb="tag"]{background:var(--aksen
 .kartu mark{background:#ffd3e8;color:#5a0c35}
 .catfoot{color:var(--aksen)}
 .catfoot:before{content:"\\266A  "}
+.stat{font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:99px;border:1px solid}
+.stat.ok{background:#dff6e8;color:#14663a;border-color:#a8dfc0}
+.stat.ubah{background:#fff1d6;color:#8a5200;border-color:#f0cf8f}
+.stat.cabut{background:#fde3e3;color:#a11d1d;border-color:#f3b3b3}
+.stat.belum{background:#eef1f3;color:#5a6b73;border-color:#d3dce1}
 img.maskot{width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:14px;border:1px solid var(--garis);box-shadow:0 4px 16px rgba(11,138,130,.18);margin-top:14px;pointer-events:none}
 @media (max-width:820px){img.maskot{display:none}}
 </style>""", unsafe_allow_html=True)
@@ -332,9 +357,12 @@ def kartu_html(c, ts, penuh=False, buka_pen=False):
            if c.get("lowq") else "")
     return (f'<div class="kartu" style="border-top:4px solid {warna}">'
             f'<div class="atas"><span class="lencana" style="background:{warna}">{html.escape(d["singkat"])}</span>'
-            f'<span class="jejak" style="margin:0">{html.escape(d["jenis"])} {html.escape(d["nomor"])}/{html.escape(d["tahun"])}</span></div>'
+            f'<span class="jejak" style="margin:0">{html.escape(d["jenis"])} {html.escape(d["nomor"])}/{html.escape(d["tahun"])}</span>'
+            f'{lencana_status(d)}</div>'
             f'<div class="nomor">{html.escape(c["label"])}</div><div class="jejak">{jejak}</div>'
-            f'<div class="isi">{isi_html(isi, ts)}</div>{pen}{cat}</div>')
+            f'<div class="isi">{isi_html(isi, ts)}</div>{pen}{cat}'
+            + (f'<div class="catatan">Status: {html.escape(d["status_ket"])}</div>' if d.get("status_ket") else "")
+            + '</div>')
 
 
 def baca_dokumen():
@@ -513,9 +541,11 @@ with tab_cari:
 
 
 st.markdown(
-    '<div class="catfoot">Status berlaku/diubah/dicabut belum diverifikasi: '
-    + ", ".join(html.escape(d["singkat"]) for d in DOCS.values())
-    + ". Periksa perubahan terbaru sebelum dijadikan rujukan.</div>", unsafe_allow_html=True)
+    '<div class="catfoot">'
+    + ("Status berlaku/diubah/dicabut belum diverifikasi: "
+       + ", ".join(html.escape(d["singkat"]) for d in DOCS.values() if (d.get("status") or "Belum diverifikasi") == "Belum diverifikasi")
+       + ". " if any((d.get("status") or "Belum diverifikasi") == "Belum diverifikasi" for d in DOCS.values()) else "")
+    + "Periksa perubahan terbaru sebelum dijadikan rujukan.</div>", unsafe_allow_html=True)
 
 if st.session_state.get("latar") and gambar_b64("latar.jpg"):
     st.markdown(
