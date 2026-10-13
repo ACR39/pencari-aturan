@@ -1,24 +1,8 @@
 {
-  "uu-22-2009": {
-    "status": "Berlaku",
-    "keterangan": ""
-  },
-  "pm-60-2019": {
-    "status": "Berlaku",
-    "keterangan": ""
-  },
-  "pm-17-2021": {
-    "status": "Berlaku",
-    "keterangan": ""
-  },
-  "permen-panrb-88-2021": {
-    "status": "Berlaku",
-    "keterangan": ""
-  }
-  "pm-85-2018": { "status": "Berlaku", 
-    "keterangan": "" 
-  }
-  "pm-25-2021": { "status": "Berlaku", 
-    "keterangan": "" 
-  }
+  "uu-22-2009": { "status": "Berlaku", "keterangan": "" },
+  "pm-60-2019": { "status": "Berlaku", "keterangan": "" },
+  "pm-17-2021": { "status": "Berlaku", "keterangan": "" },
+  "permen-panrb-88-2021": { "status": "Berlaku", "keterangan": "" },
+  "pm-85-2018": { "status": "Berlaku", "keterangan": "" },
+  "pm-25-2021": { "status": "Berlaku", "keterangan": "" }
 }
