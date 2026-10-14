@@ -453,6 +453,21 @@ def baca_dokumen():
     for c in item[mulai:mulai + per]:
         st.markdown(kartu_html(c, [], penuh=True, buka_pen=buka_pen), unsafe_allow_html=True)
 
+    # Tombol halaman di bawah, supaya tidak perlu menggulir ke atas untuk lanjut membaca.
+    if total > 1 and not lompat:
+        kunci_hal = f"baca_hal_{k}_{bagian}"
+
+        def ke_hal(delta):
+            st.session_state[kunci_hal] = min(total, max(1, st.session_state.get(kunci_hal, 1) + delta))
+
+        sebelum, tengah, sesudah = st.columns([1, 2, 1])
+        sebelum.button("← Sebelumnya", on_click=ke_hal, args=(-1,), disabled=(mulai // per + 1 <= 1),
+                       use_container_width=True, key=f"prev_{kunci_hal}")
+        tengah.markdown(f'<p style="text-align:center;margin:.5rem 0">Halaman {mulai // per + 1} dari {total}</p>',
+                        unsafe_allow_html=True)
+        sesudah.button("Berikutnya →", on_click=ke_hal, args=(1,), disabled=(mulai // per + 1 >= total),
+                       use_container_width=True, key=f"next_{kunci_hal}")
+
 def equalizer(n=56):
     out = []
     for i in range(n):
