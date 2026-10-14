@@ -157,7 +157,7 @@ def slug(s: str) -> str:
 # ---------------------------------------------------------------- pemecahan
 KUNCI_PEN = re.compile(r"^\s*P\s*E\s*N\s*J\s*E\s*L\s*A\s*S\s*A\s*N\s*$")
 AKHIR = re.compile(r"^\s*(Ditetapkan|Disahkan) di\b")
-LAMP = re.compile(r"^\s*LAMPIRAN\s*([IVXL]+)\s*$")
+LAMP = re.compile(r"^\s*LAMPIRAN\s*([IVXL]*)\s*$")
 
 
 def sisip_pasal_1(badan):
@@ -209,7 +209,7 @@ def pecah(lines, doc_id, ocr: bool):
 
     for c in pasal:
         for j, l in enumerate(c["lines"]):
-            if AKHIR.match(l):
+            if AKHIR.match(l) or re.match(r"^\s*Agar\s+setiap\s+orang\s+mengetahuinya", l):
                 c["lines"] = c["lines"][:j]
                 break
         c["lines"] = P.potong_penutup(c["lines"])
@@ -244,7 +244,7 @@ def pecah(lines, doc_id, ocr: bool):
     for ln in P.bersih(lamp_lines):
         m = LAMP.match(ln)
         if m:
-            cur = {"nama": "Lampiran " + m.group(1), "lines": []}
+            cur = {"nama": "Lampiran" + (" " + m.group(1) if m.group(1) else ""), "lines": []}
             bag.append(cur)
             continue
         if cur is not None and ln.strip():
