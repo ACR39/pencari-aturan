@@ -62,7 +62,31 @@ def muat():
 
 
 DATA, DF = muat()
-DOCS = {d["id"]: d for d in DATA["docs"]}
+
+
+def urutan_hirarki(d):
+    """Urutan menurut hierarki peraturan perundang-undangan, lalu jenis, tahun, nomor."""
+    j = (d.get("jenis") or "").lower()
+    if "undang-undang" in j or "perpu" in j:
+        r = 1
+    elif "pemerintah" in j and "daerah" not in j and "menteri" not in j:
+        r = 2
+    elif "presiden" in j or "perpres" in j:
+        r = 3
+    elif "menteri" in j or "kepala" in j or "badan" in j:
+        r = 4
+    elif "provinsi" in j or "gubernur" in j:
+        r = 5
+    elif "daerah" in j or "kabupaten" in j or "kota" in j or "bupati" in j or "walikota" in j:
+        r = 6
+    else:
+        r = 9
+    m = re.search(r"\d+", str(d.get("nomor") or ""))
+    th = str(d.get("tahun") or "0")
+    return (r, j, int(th) if th.isdigit() else 0, int(m.group()) if m else 0)
+
+
+DOCS = {d["id"]: d for d in sorted(DATA["docs"], key=urutan_hirarki)}
 st.session_state.setdefault("latar", True)   # gambar latar menyala secara bawaan
 
 # Status tiap peraturan dibaca dari data/status.json (satu tempat untuk semua dokumen).
