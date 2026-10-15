@@ -1,0 +1,25 @@
+name: Jaga aplikasi tetap aktif
+on:
+  schedule:
+    - cron: "0 */8 * * *"   # tiap 8 jam
+  workflow_dispatch:
+jobs:
+  kunjungi:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pip install playwright && playwright install --with-deps chromium
+      - run: |
+          cat > k.py <<'EOF'
+          import os
+          from playwright.sync_api import sync_playwright
+          with sync_playwright() as p:
+              b = p.chromium.launch(); pg = b.new_page()
+              pg.goto(os.environ["URL"], timeout=90000)
+              pg.wait_for_timeout(8000)
+              for t in pg.get_by_text("get this app back up").all():
+                  t.click(); pg.wait_for_timeout(30000)
+              print("OK", pg.title()); b.close()
+          EOF
+          python k.py
+        env:
+          URL: https://ringkasan-aturan.streamlit.app/
