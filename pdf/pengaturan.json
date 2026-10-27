@@ -34,5 +34,13 @@
     "judul": "Penilaian Kinerja Organisasi",
     "singkat": "Permen PANRB 22/2024",
     "ocr": false
+  },
+  "PM 19 Tahun 2017.pdf": {
+    "id": "pm-19-2017",
+    "jenis": "Peraturan Menteri Perhubungan",
+    "nomor": "PM 19",
+    "tahun": "2017",
+    "judul": "Pedoman Standar Pelayanan di Lingkungan Kementerian Perhubungan",
+    "singkat": "PM 19/2017"
   }
 }
