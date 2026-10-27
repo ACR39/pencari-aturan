@@ -1,6 +1,7 @@
 # Laporan pemrosesan PDF
 
 - 🗑️ **PM 25/2021** dihapus dari indeks (file `PM 25 Tahun 2021.pdf` sudah tidak ada).
+- 🗑️ **PM 19/2017** dihapus dari indeks (file `PM 19 Tahun 2017.pdf` sudah tidak ada).
 - 📎 `PM 60-2019.pdf` dipakai sebagai PDF asli untuk **PM 60/2019** (isi indeks yang sudah dikoreksi tidak diproses ulang).
 - ⏭️ `PM 85 Tahun 2018.pdf` tidak berubah, dilewati.
 - ⏭️ `Permen PANRB No. 22 Tahun 2024.pdf` tidak berubah, dilewati.
